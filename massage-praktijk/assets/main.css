@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: work-sans, sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --background-color: #FFFBF6;
+    --primary: #1D5983;
+    --secondary: #9C866C;
+    --tertiary: #312F48;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* HTML */
+h1 {
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 10rem;
+    color: var(--primary);
+}
+
+h2 {
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 7rem;
+    line-height: 7rem;
+    color: var(--primary);
+}
+
+h3 {
+    font-family: work-sans, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--tertiary);
+}
+
+h4 {
+    font-family: work-sans, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--tertiary);
+}
+
+p {
+    font-family: work-sans, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--tertiary);
+}
+
+a {
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    color: var(--tertiary);
+}
+
+/* BUTTONS */
+.primary-button {
+    position: relative;
+    border-radius: 30px;
+    border: solid 2px var(--tertiary);
+    padding: 0.8rem 6rem 0.8rem 4rem;
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 999;
+}
+
+button svg {
+    position: absolute;
+    margin-top: -0.77rem;
+    margin-left: 2.75rem;
+    transition: transform 0.3s ease;
+}
+
+.primary-button:hover{
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.primary-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: var(--secondary);
+    transition: left 0.5s;
+    z-index: -1;
+}
+
+.primary-button:hover::before {
+    left: 0;
+    z-index: -1;
+}
+
+.primary-button:hover svg {
+    transform: rotate(37deg); /* Rotate the SVG by 45 degrees on hover */
+}
+
+
+
+
