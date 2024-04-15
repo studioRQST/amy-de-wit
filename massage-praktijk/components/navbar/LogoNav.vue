@@ -41,5 +41,8 @@
 </template>
 
 <style scoped>
-
+div {
+  margin-top: 2.3rem;
+  margin-left: 2rem;
+}
 </style>
