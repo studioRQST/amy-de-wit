@@ -41,9 +41,9 @@
           <nav>
             <ul class="menu">
               <li><a href="/" class="menu-item">Home</a></li>
-              <li><a href="/" class="menu-item">Massages</a></li>
-              <li><a href="/" class="menu-item">Over mij</a></li>
-              <li><a href="/" class="menu-item">Contact</a></li>
+              <li><a href="/massages" class="menu-item">Massages</a></li>
+              <li><a href="/over-mij" class="menu-item">Over mij</a></li>
+              <li><a href="/contact" class="menu-item">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -184,7 +184,7 @@ ul {
 }
 
 nav a:hover {
-  color: white;
+  color: var(--secondary);
 }
 
 nav a:hover:before {

@@ -3,10 +3,9 @@
 </script>
 
 <template>
-<div>
-  <NavbarNavBar/>
-  <HomePage/>
-</div>
+  <div>
+    <NavbarNavBar/>
+  </div>
 </template>
 
 <style scoped>

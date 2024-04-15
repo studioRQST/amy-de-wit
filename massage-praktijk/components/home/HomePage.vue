@@ -5,7 +5,6 @@
 
 <template>
 <div>
-  <NavbarNavBar/>
   <HomeSectionOne/>
 </div>
 </template>
