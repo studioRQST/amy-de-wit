@@ -1,57 +1,99 @@
 <template>
-  <header>
-    <div class="logo">
-        <nuxt-link href="/">
-        <NavbarLogoNav/>
-        </nuxt-link>
+    <div>
+      <header class="sticky-header">
+        <div class="logo">
+          <nuxt-link href="/">
+            <NavbarMainLogo/>
+          </nuxt-link>
+        </div>
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn">
+            <p>Menu</p>
+            <span></span>
+        </label>
+        <label for="active" class="close"></label>
+        <div class="wrapper">
+          <ul>
+            <li><nuxt-link href="/">Home</nuxt-link></li>
+            <li><nuxt-link href="/">Massages</nuxt-link></li>
+            <li><nuxt-link href="/">Over Mij</nuxt-link></li>
+            <li><nuxt-link href="/">Contact</nuxt-link></li>
+          </ul>
+          <div class="contact-items">
+            <div>
+                <h3>Contact</h3>
+                <nuxt-link href="mailto:info@amydewit.nl">info@amydewit.nl</nuxt-link>
+                <nuxt-link href="tel:+31610629690">+31610629690</nuxt-link>
+            </div>
+            <div>
+                <h3>Adres</h3>
+                <h4>Elbaweg 30</h4>
+                <h4>1607 MP Hem</h4>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
-    <input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><span></span></label>
-    <label for="active" class="close"></label>
-    <div class="wrapper">
-      <ul>
-        <li><nuxt-link href="#">Home</nuxt-link></li>
-        <li><nuxt-link href="#">Massages</nuxt-link></li>
-        <li><nuxt-link href="#">Over Mij</nuxt-link></li>
-        <li><nuxt-link href="#">Contact</nuxt-link></li>
-      </ul>
-    </div>
-</header>
-</template>
+  </template>
 
 
 <style scoped>
+
+:root {
+    --background-color: #FFFBF6;
+    --primary: #1D5983;
+    --secondary: #9C866C;
+    --tertiary: #312F48;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+  background-color: var(--background-color);
+  padding-bottom: 1rem;
+}
 
 .logo {
     margin: 2rem 0 0 1.5rem;
   }
 
-.wrapper{
+.wrapper {
   position: fixed;
-  top: 0;
   right: -100%;
   height: 100%;
   width: 100%;
-  background: #000;
+  background: var(--background-color);
   transition: all 0.6s ease-in-out;
+  z-index: 102;
 }
+
 #active:checked ~ .wrapper{
-  right:0;
+  right: 0;
 }
+
 .menu-btn{
   position: absolute;
   z-index: 2;
-  right: 20px;
-  top: 20px;
+  right: 1rem;
+  top: 1.5rem;
   height: 50px;
   width: 50px;
   text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+.menu-btn p{
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
 .menu-btn span,
 .menu-btn:before,
 .menu-btn:after{
@@ -60,118 +102,120 @@
 	top: calc(50% - 1px);
 	left: 30%;
 	width: 40%;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid var(--tertiary);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .menu-btn:before{
   transform: translateY(-8px);
 }
+
 .menu-btn:after{
   transform: translateY(8px);
 }
 
 
 .close {
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
+  z-index: 104;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
 }
 
 /* closing animation */
+
+input[type="checkbox"]{
+  display: none;
+}
+
 #active:checked + .menu-btn span {
 	transform: scaleX(0);
 }
+
 #active:checked + .menu-btn:before {
 	transform: rotate(45deg);
-  border-color: #fff;
+    border-color: var(--tertiary)
 }
+
 #active:checked + .menu-btn:after {
 	transform: rotate(-45deg);
-  border-color: #fff;
+    border-color: var(--tertiary)
 }
+
 .wrapper ul{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 90%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  top: 25%;
+  left: 0;
+  height: 100%;
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
+
 .wrapper ul li{
-  height: 10%;
-  margin: 15px 0;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 3rem;
 }
+
 .wrapper ul li a{
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px 30px;
-  color: #fff;
-  border-radius: 50px;
   position: absolute;
-  line-height: 50px;
-  margin: 5px 30px;
+  text-decoration: none;
+  font-size: 4rem;
+  color: var(--primary);
+  margin: 0 7.5rem;
   opacity: 0;
   transition: all 0.3s ease;
   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.wrapper ul li a:after{
-  position: absolute;
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 50px;
-  transform: scaleY(0);
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-.wrapper ul li a:hover:after{
-  transform: scaleY(1);
-}
+
 .wrapper ul li a:hover{
-  color: #1a73e8;
-}
-input[type="checkbox"]{
-  display: none;
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  text-align: center;
-  width: 100%;
-  color: #202020;
-}
-.content .title{
-  font-size: 40px;
-  font-weight: 700;
-}
-.content p{
-  font-size: 35px;
-  font-weight: 600;
+  color: var(--secondary)
 }
 
 #active:checked ~ .wrapper ul li a{
   opacity: 1;
 }
-.wrapper ul li a{
+
+ul li a{
   transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translateX(100px);
 }
+
 #active:checked ~ .wrapper ul li a{
-	transform: none;
-	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
-   transition-delay: .6s;
+  transform: none;
+  transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
+  transition-delay: .6s;
   transform: translateX(-100px);
 }
 
+.contact-items {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--primary);
+  padding: 2rem 0;
+}
+
+.contact-items div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+.contact-items ,h3,h4,a{
+    color: var(--background-color);
+    line-height: 1.4rem;
+}
+
+.contact-items a{
+    font-family: work-sans, sans-serif;
+    font-size: 1rem;
+    text-decoration: none
+}
 
 </style>
 
