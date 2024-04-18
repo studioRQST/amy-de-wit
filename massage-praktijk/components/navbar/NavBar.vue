@@ -5,9 +5,9 @@
 <template>
   <header>
 
-    <a href="/">
+    <nuxt-link href="/">
       <NavbarLogoNav/>
-    </a>
+    </nuxt-link>
 
     <div class="header-wrapper">
 
