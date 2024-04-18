@@ -1,50 +1,40 @@
 <template>
-    <div>
-      <header class="sticky-header">
-        <div class="logo">
-          <nuxt-link href="/">
-            <NavbarMainLogo/>
-          </nuxt-link>
-        </div>
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn">
-            <p>Menu</p>
-            <span></span>
-        </label>
-        <label for="active" class="close"></label>
-        <div class="wrapper">
-          <ul>
-            <li><nuxt-link href="/">Home</nuxt-link></li>
-            <li><nuxt-link href="/">Massages</nuxt-link></li>
-            <li><nuxt-link href="/">Over Mij</nuxt-link></li>
-            <li><nuxt-link href="/">Contact</nuxt-link></li>
-          </ul>
-          <div class="contact-items">
-            <div>
-                <h3>Contact</h3>
-                <nuxt-link href="mailto:info@amydewit.nl">info@amydewit.nl</nuxt-link>
-                <nuxt-link href="tel:+31610629690">+31610629690</nuxt-link>
-            </div>
-            <div>
-                <h3>Adres</h3>
-                <h4>Elbaweg 30</h4>
-                <h4>1607 MP Hem</h4>
-            </div>
-          </div>
-        </div>
-      </header>
+  <nav class="sticky-header" role="navigation">
+    <div class="logo">
+      <nuxt-link href="/" aria-label="Home">
+        <NavbarMainLogo alt="Logo van Amy de Wit"/>
+      </nuxt-link>
     </div>
-  </template>
-
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn" aria-label="Toggle Menu">
+      <!-- <p>Menu</p> -->
+      <span></span>
+    </label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><nuxt-link href="/">Home</nuxt-link></li>
+        <li><nuxt-link href="/">Massages</nuxt-link></li>
+        <li><nuxt-link href="/">Over Mij</nuxt-link></li>
+        <li><nuxt-link href="/">Contact</nuxt-link></li>
+      </ul>
+      <div class="contact-items">
+        <div>
+          <h3>Contact</h3>
+          <nuxt-link href="mailto:info@amydewit.nl">info@amydewit.nl</nuxt-link>
+          <nuxt-link href="tel:+31610629690">+31610629690</nuxt-link>
+        </div>
+        <div>
+          <h3>Adres</h3>
+          <p>Elbaweg 30</p>
+          <p>1607 MP Hem</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
 
 <style scoped>
-
-:root {
-    --background-color: #FFFBF6;
-    --primary: #1D5983;
-    --secondary: #9C866C;
-    --tertiary: #312F48;
-}
 
 .sticky-header {
   position: fixed;
@@ -57,8 +47,8 @@
 }
 
 .logo {
-    margin: 2rem 0 0 1.5rem;
-  }
+  margin: 2rem 0 0 1.5rem;
+}
 
 .wrapper {
   position: fixed;
@@ -74,7 +64,7 @@
   right: 0;
 }
 
-.menu-btn{
+.menu-btn {
   position: absolute;
   z-index: 2;
   right: 1rem;
@@ -86,34 +76,33 @@
   transition: all 0.3s ease-in-out;
 }
 
-.menu-btn p{
-    font-family: bebas-neue-pro, sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-align: left;
+.menu-btn p {
+  font-family: bebas-neue-pro, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 .menu-btn span,
 .menu-btn:before,
-.menu-btn:after{
-	content: "";
-	position: absolute;
-	top: calc(50% - 1px);
-	left: 30%;
-	width: 40%;
-	border-bottom: 2px solid var(--tertiary);
-	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+.menu-btn:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 30%;
+  width: 40%;
+  border-bottom: 2px solid var(--tertiary);
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.menu-btn:before{
+.menu-btn:before {
   transform: translateY(-8px);
 }
 
-.menu-btn:after{
+.menu-btn:after {
   transform: translateY(8px);
 }
-
 
 .close {
   z-index: 104;
@@ -125,27 +114,25 @@
   height: 50px;
 }
 
-/* closing animation */
-
-input[type="checkbox"]{
+input[type="checkbox"] {
   display: none;
 }
 
 #active:checked + .menu-btn span {
-	transform: scaleX(0);
+  transform: scaleX(0);
 }
 
 #active:checked + .menu-btn:before {
-	transform: rotate(45deg);
-    border-color: var(--tertiary)
+  transform: rotate(45deg);
+  border-color: var(--tertiary);
 }
 
 #active:checked + .menu-btn:after {
-	transform: rotate(-45deg);
-    border-color: var(--tertiary)
+  transform: rotate(-45deg);
+  border-color: var(--tertiary);
 }
 
-.wrapper ul{
+.wrapper ul {
   position: absolute;
   width: 100%;
   top: 25%;
@@ -155,13 +142,13 @@ input[type="checkbox"]{
   text-align: left;
 }
 
-.wrapper ul li{
+.wrapper ul li {
   width: 100%;
   height: 5%;
   margin-bottom: 3rem;
 }
 
-.wrapper ul li a{
+.wrapper ul li a {
   position: absolute;
   text-decoration: none;
   font-size: 4rem;
@@ -172,20 +159,20 @@ input[type="checkbox"]{
   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.wrapper ul li a:hover{
-  color: var(--secondary)
+.wrapper ul li a:hover {
+  color: var(--secondary);
 }
 
-#active:checked ~ .wrapper ul li a{
+#active:checked ~ .wrapper ul li a {
   opacity: 1;
 }
 
-ul li a{
+ul li a {
   transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translateX(100px);
 }
 
-#active:checked ~ .wrapper ul li a{
+#active:checked ~ .wrapper ul li a {
   transform: none;
   transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
   transition-delay: .6s;
@@ -206,17 +193,20 @@ ul li a{
   padding: 1rem 0 1rem 1.5rem;
 }
 
-.contact-items ,h3,h4,a{
-    color: var(--background-color);
-    line-height: 1.4rem;
+.contact-items h3,
+.contact-items h4,
+.contact-items a,
+.contact-items p {
+  color: var(--background-color);
+  line-height: 1.4rem;
 }
 
-.contact-items a{
-    font-family: work-sans, sans-serif;
-    font-size: 1rem;
-    text-decoration: none
+.contact-items a,
+.contact-items p {
+  font-family: work-sans, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 </style>
-
-  
