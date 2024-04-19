@@ -6,6 +6,7 @@
 <template>
 <div>
   <HomeSectionOne/>
+  <HomeSectionTwo/>
 </div>
 </template>
 
