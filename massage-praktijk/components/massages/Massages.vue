@@ -5,6 +5,7 @@
 <template>
   <MassagesSectionOne/>
   <MassagesSectionTwo/>
+  <MassagesSectionThree/>
 </template>
 
 <style scoped>
