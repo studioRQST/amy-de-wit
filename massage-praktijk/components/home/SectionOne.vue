@@ -40,6 +40,19 @@
     gap: 2rem;
 }
 
+.intro-contain-text img {
+    animation: rotateStar 6s linear infinite; /* Hier wordt de animatie toegepast */
+}
+
+@keyframes rotateStar {
+    from {
+        transform: rotate(0deg); /* Beginpositie van de rotatie */
+    }
+    to {
+        transform: rotate(360deg); /* Eindpositie van de rotatie (volledige cirkel) */
+    }
+}
+
 .intro-contain-text span{
     font-weight: 600;
 }

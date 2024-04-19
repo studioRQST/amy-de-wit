@@ -19,14 +19,12 @@ body {
 
 /* HTML */
 
-
-
 h1 {
     font-family: bebas-neue-pro, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 7rem;
-    line-height: 6.8rem;
+    font-size: 6rem;
+    line-height: 6rem;
     color: var(--primary);
 }
 
@@ -74,7 +72,7 @@ a {
     color: var(--tertiary);
 }
 
-/* BUTTONS */
+/* primary button */
 
 .primary-button {
     position: relative;
@@ -91,7 +89,7 @@ a {
 
 button svg {
     position: absolute;
-    margin-top: -0.77rem;
+    margin-top: -0.90rem;
     margin-left: 2.75rem;
     transition: transform 0.3s ease;
 }
@@ -119,7 +117,56 @@ button svg {
 }
 
 .primary-button:hover svg {
-    transform: rotate(37deg); /* Rotate the SVG by 45 degrees on hover */
+    transform: rotate(37deg);
+}
+
+/* secondary button  */
+
+.secondary-button {
+    position: relative;
+    border-radius: 30px;
+    border: solid 1.5px var(--background-color);
+    padding: 0.8rem 6rem 0.8rem 4rem;
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 999;
+    color: var(--background-color);
+}
+
+.secondary-button button svg {
+    position: absolute;
+    margin-top: -0.90rem;
+    margin-left: 2.75rem;
+    transition: transform 0.3s ease;
+}
+
+.secondary-button:hover{
+    color: var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.secondary-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: var(--background-color);
+    transition: left 0.5s;
+    z-index: -1;
+}
+
+.secondary-button:hover::before {
+    left: 0;
+    z-index: -1;
+}
+
+.secondary-button:hover svg {
+    transform: rotate(37deg);
 }
 
 
