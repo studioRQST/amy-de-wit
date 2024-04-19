@@ -4,7 +4,12 @@
 
 <template>
   <div>
-    <NavbarNavBar/>
+    <NavbarHeader/>
+    <h1>HALLO</h1>
+    <h1>HALLO</h1>
+    <h1>HALLO</h1>
+    <h1>HALLO</h1>
+    <Footer/>
   </div>
 </template>
 
