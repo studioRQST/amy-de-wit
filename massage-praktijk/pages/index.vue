@@ -8,6 +8,7 @@ import Header from '~/components/navbar/Header.vue';
 <div>
   <Header/>
   <HomePage/>
+  <Footer/>
 </div>
 </template>
 
