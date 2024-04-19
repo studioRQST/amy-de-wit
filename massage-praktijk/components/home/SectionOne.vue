@@ -3,28 +3,8 @@
 </script>
 
 <template>
-<section>
-
-<h1>Test</h1>
-<h1>Test</h1>
-
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-
-
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
+<section class="intro-contain">
+    <h1>Verlicht Herstel <span>&</span> Vernieuw</h1>
 
 
   <!-- <button class="primary-button">Contact <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">-->
@@ -42,8 +22,12 @@
 
 <style scoped>
 
-section{
-    background-color: blue;
+.intro-contain{
+    padding-top: 8rem;
+}
+
+span{
+    
 }
 
 
