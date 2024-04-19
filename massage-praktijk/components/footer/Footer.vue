@@ -84,11 +84,13 @@ p {
   align-items: center;
   flex-direction: column;
   text-align: center;
+
 }
 
 svg {
   position: absolute;
   bottom: -1rem;
+  width: 100%;
 }
 
 .footer-part-two {
