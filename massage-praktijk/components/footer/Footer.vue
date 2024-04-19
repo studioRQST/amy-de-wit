@@ -118,7 +118,7 @@ svg {
 
 .footer-part-three h3 {
   color: white;
-  margin-left: 2rem;
-  width: 90%;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 </style>
