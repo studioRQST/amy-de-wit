@@ -1,10 +1,17 @@
 <script setup lang="ts">
 
+
+
 </script>
 
 <template>
 <section class="intro-contain">
-    <h1>Verlicht Herstel <span>&</span> Vernieuw</h1>
+    <h1>Verlicht <img src="/static/images/icon-logo-horizontaal.svg" alt="Icoon Logo">Herstel <span>&</span> Vernieuw</h1>
+
+
+
+
+
 
 
   <!-- <button class="primary-button">Contact <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">-->
@@ -16,18 +23,22 @@
 
 
 
-
 </section>
 </template>
 
 <style scoped>
 
 .intro-contain{
-    padding-top: 8rem;
+    padding: 8rem 1.5rem 3rem 1.5rem;
 }
 
-span{
-    
+.intro-contain span{
+    font-family: bebas-neue-pro, sans-serif;
+    color: var(--secondary);
+}
+
+.intro-contain img{
+    margin: auto;
 }
 
 
