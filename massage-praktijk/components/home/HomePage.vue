@@ -7,6 +7,7 @@
 <div>
   <HomeSectionOne/>
   <HomeSectionTwo/>
+  <Footer/>
 </div>
 </template>
 

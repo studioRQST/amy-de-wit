@@ -11,7 +11,8 @@
         <div class="intro-contain-text">
             <h4>Laat mij je begeleiden op een reis van herstel en vernieuwing</h4>
         </div>
-        <CardService/>
+        <CardLymfedrainage/>
+        <CardSportmassage/>
     </section>
 </template>
 
