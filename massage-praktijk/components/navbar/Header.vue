@@ -14,7 +14,7 @@
     <div class="wrapper">
       <ul>
         <li><nuxt-link href="/">Home</nuxt-link></li>
-        <li><nuxt-link href="/">Massages</nuxt-link></li>
+        <li><nuxt-link href="/massages">Massages</nuxt-link></li>
         <li><nuxt-link href="/">Over Mij</nuxt-link></li>
         <li><nuxt-link href="/">Contact</nuxt-link></li>
       </ul>
