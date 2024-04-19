@@ -5,10 +5,7 @@
 <template>
   <div>
     <NavbarHeader/>
-    <h1>HALLO</h1>
-    <h1>HALLO</h1>
-    <h1>HALLO</h1>
-    <h1>HALLO</h1>
+    <Massages/>
     <Footer/>
   </div>
 </template>
