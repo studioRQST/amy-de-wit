@@ -162,7 +162,11 @@ input[type="checkbox"] {
 .wrapper ul li a:hover {
   color: var(--secondary);
   transition: none;
-  transition-delay: none;
+}
+
+.wrapper ul li a:focus-visible {
+  outline: none;
+  background-color: var(--secondary);
 }
 
 #active:checked ~ .wrapper ul li a {
@@ -222,6 +226,20 @@ input[type="checkbox"] {
   font-family: work-sans, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.contact-items a:hover,
+.contact-items p:hover {
+  outline: none;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contact-items a:focus-visible,
+.contact-items p:focus-visible {
+  outline: none;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 </style>
