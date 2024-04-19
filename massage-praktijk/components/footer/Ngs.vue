@@ -17,7 +17,7 @@
 <style scoped>
 section {
   background-color: var(--secondary);
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
   display: flex;
   justify-content: center;
