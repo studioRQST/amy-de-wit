@@ -3,12 +3,13 @@
 </script>
 
 <template>
-    <div>
-      <OverSectionOne/>
-      <OverSectionTwo/>
-    </div>
+        <div>
+            <h2>Jouw herstel is mijn missie!</h2>
+        </div>
 </template>
 
 <style scoped>
+
+
 
 </style>

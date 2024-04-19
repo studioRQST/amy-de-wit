@@ -7,6 +7,8 @@
 <div>
   <HomeSectionOne/>
   <HomeSectionTwo/>
+  <HomeSectionThree/>
+  <HomeSectionFour/>
 </div>
 </template>
 

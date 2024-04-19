@@ -1,11 +1,9 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
     <section>
         <div class="intro-contain">
-            <h1>Verlicht <img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo">Herstel <span>&</span> Vernieuw</h1>
+            <h1>Verlicht<img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo"></h1>
+            <h1>Herstel <span>&</span></h1>
+            <h1>Vernieuw</h1>
         </div>
         <div class="intro-contain-text">
             <img src="/static/icons/icon-star-brown.svg" alt="Icoon Ster">
@@ -26,12 +24,12 @@
 }
 
 .intro-contain span{
-    font-family: bebas-neue-pro, sans-serif;
     color: var(--secondary);
+    font-family: bebas-neue-pro, sans-serif;
 }
 
 .intro-contain img{
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 1rem;
 }
 
 .intro-contain-text{
@@ -41,15 +39,15 @@
 }
 
 .intro-contain-text img {
-    animation: rotateStar 6s linear infinite; /* Hier wordt de animatie toegepast */
+    animation: rotateStar 6s linear infinite; 
 }
 
 @keyframes rotateStar {
     from {
-        transform: rotate(0deg); /* Beginpositie van de rotatie */
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg); /* Eindpositie van de rotatie (volledige cirkel) */
+        transform: rotate(360deg);
     }
 }
 
