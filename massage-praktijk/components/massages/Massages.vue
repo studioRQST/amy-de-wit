@@ -3,7 +3,8 @@
 </script>
 
 <template>
-<MassagesSectionOne/>
+  <MassagesSectionOne/>
+  <MassagesSectionTwo/>
 </template>
 
 <style scoped>
