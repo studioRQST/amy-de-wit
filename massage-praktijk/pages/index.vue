@@ -6,6 +6,7 @@
 <div>
   <Header/>
   <HomePage/>
+  <FooterNgs/>
   <Footer/>
 </div>
 </template>
