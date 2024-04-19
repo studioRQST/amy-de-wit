@@ -135,7 +135,7 @@ input[type="checkbox"] {
 .wrapper ul {
   position: absolute;
   width: 100%;
-  top: 20%;
+  top: 25%;
   left: 0;
   height: 100%;
   list-style: none;
@@ -188,10 +188,18 @@ input[type="checkbox"] {
 
 .contact-items {
   position: fixed;
+  display: flex;
+  gap: 2rem;
   width: 100%;
   bottom: 0;
   background-color: var(--primary);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  transform: translateX(100%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#active:checked ~ .wrapper .contact-items {
+  transform: translateX(0%);
 }
 
 .contact-items div {
@@ -205,13 +213,13 @@ input[type="checkbox"] {
 .contact-items a,
 .contact-items p {
   color: var(--background-color);
-  line-height: 1.4rem;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 .contact-items a,
 .contact-items p {
   font-family: work-sans, sans-serif;
-  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
 }
