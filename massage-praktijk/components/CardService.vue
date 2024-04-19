@@ -26,8 +26,8 @@ section{
 
 .image-overlay div{
     overflow: clip;
-    width: 25rem;
-    height: 20rem;
+    width: 22rem;
+    height: 18rem;
     background-color: var(--secondary);
 }
 
