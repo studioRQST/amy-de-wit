@@ -135,7 +135,7 @@ input[type="checkbox"] {
 .wrapper ul {
   position: absolute;
   width: 100%;
-  top: 25%;
+  top: 20%;
   left: 0;
   height: 100%;
   list-style: none;
@@ -153,30 +153,37 @@ input[type="checkbox"] {
   text-decoration: none;
   font-size: 4rem;
   color: var(--primary);
-  margin: 0 7.5rem;
+  margin: 0 1.5rem;
   opacity: 0;
-  transition: all 0.3s ease;
-  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s ease, transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateX(100%);
 }
 
 .wrapper ul li a:hover {
   color: var(--secondary);
+  transition: none;
+  transition-delay: none;
 }
 
 #active:checked ~ .wrapper ul li a {
   opacity: 1;
+  transform: translateX(0%);
 }
 
-ul li a {
-  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateX(100px);
+#active:checked ~ .wrapper ul li:nth-child(1) a {
+  transition-delay: 0.3s; 
 }
 
-#active:checked ~ .wrapper ul li a {
-  transform: none;
-  transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
-  transition-delay: .6s;
-  transform: translateX(-100px);
+#active:checked ~ .wrapper ul li:nth-child(2) a {
+  transition-delay: 0.6s; 
+}
+
+#active:checked ~ .wrapper ul li:nth-child(3) a {
+  transition-delay: 0.9s; 
+}
+
+#active:checked ~ .wrapper ul li:nth-child(4) a {
+  transition-delay: 1s;
 }
 
 .contact-items {
@@ -184,7 +191,7 @@ ul li a {
   width: 100%;
   bottom: 0;
   background-color: var(--primary);
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .contact-items div {
