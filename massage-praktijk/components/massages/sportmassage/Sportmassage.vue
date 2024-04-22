@@ -5,11 +5,12 @@
 <template>
   <section>
     <MassagesSportmassageSectionOne/>
+    <MassagesSportmassageSectionTwo/>
+    <MassagesSportmassageSectionThree/>
+    <MassagesSportmassageSectionFour/>
   </section>
 </template>
 
 <style scoped>
-section {
-  margin-top: 8rem;
-}
+
 </style>

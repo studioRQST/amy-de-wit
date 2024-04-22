@@ -5,7 +5,7 @@
 <template>
   <section>
     <div class="flex-wrapper-text">
-    <h1>Sportmassage</h1>
+    <h1>Sport<span>massage</span></h1>
     <h2>Optimaliseer jouw prestaties!</h2>
     <h3>Ontdek de Voordelen van Sportmassage</h3>
     <p>Welkom op de pagina gewijd aan sportmassage bij Massagepraktijk Amy de Wit. Een sportmassage is een doeltreffende
@@ -22,11 +22,20 @@
 </template>
 
 <style scoped>
+section {
+  margin-top: 8rem;
+}
+
 .flex-wrapper-text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-left: 1.5rem;
+}
+
+span {
+  display: block;
+  font-family: bebas-neue-pro, sans-serif;
 }
 
 h2 {
