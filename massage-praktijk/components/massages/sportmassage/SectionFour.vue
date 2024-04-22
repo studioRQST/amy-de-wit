@@ -38,7 +38,7 @@ span {
 .container-text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .p-bold {

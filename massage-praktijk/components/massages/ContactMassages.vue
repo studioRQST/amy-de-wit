@@ -37,6 +37,8 @@
 <style scoped>
 section {
   margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 
@@ -56,7 +58,7 @@ span {
 form {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  margin-left: 1.5rem;
+
 }
 
 label {
