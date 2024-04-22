@@ -15,7 +15,8 @@
 
 <style scoped>
 section {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   margin-left: 1.5rem;
 }
 

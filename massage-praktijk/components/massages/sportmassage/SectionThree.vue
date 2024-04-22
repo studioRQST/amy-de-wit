@@ -17,8 +17,8 @@
 
 <style scoped>
 section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   padding-left: 1.5rem;
   background-color: var(--primary);
 }

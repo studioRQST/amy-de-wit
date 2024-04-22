@@ -8,7 +8,7 @@
     <div class="image-description">
         <h3>Sportmassage</h3>
         <h4>Optimaliseer Jouw Prestaties met Sportmassage</h4>
-        <nuxt-link href="/" aria-label="Link naar pagina sportmassage">
+        <nuxt-link href="/massage/sportmassage" aria-label="Link naar pagina sportmassage">
             <button class="primary-button">Lees meer 
                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="26" cy="26" r="26" fill="#9C866C"/>
