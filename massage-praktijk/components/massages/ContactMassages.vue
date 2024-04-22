@@ -72,21 +72,24 @@ label {
 }
 
 input {
-  height: 1.8rem;
-  width: 19rem;
+  width: 100%;
   margin-bottom: 1rem;
   border-radius: 5px;
   border: 2px solid var(--secondary);
   font-family: work-sans, sans-serif;
+  padding: 1rem;
+  background-color: var(--background-color)
 }
 
 textarea {
-  height: 10rem;
-  width: 19rem;
+  width: 100%;
+  height: 15rem;
   margin-bottom: 1rem;
   border-radius: 5px;
   border: 2px solid var(--secondary);
   font-family: work-sans, sans-serif;
+  padding: 1rem;
+  background-color: var(--background-color)
 }
 
 input:focus,
