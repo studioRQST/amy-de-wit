@@ -1,10 +1,9 @@
 <script setup lang="ts">
-  import Header from '~/components/navbar/Header.vue';
 </script>
 
 <template>
   <div>
-    <Header/>
+    <NavbarHeader/>
     <Over/>
     <Footer/>
   </div>
