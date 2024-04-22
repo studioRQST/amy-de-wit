@@ -38,4 +38,14 @@
   font-weight: bold;
 }
 
+@media only screen and (min-width: 48rem) {
+  h2, h4 {
+    margin-left: 1rem;
+  }
+
+  h4 {
+    width: 60%;
+  }
+}
+
 </style>
