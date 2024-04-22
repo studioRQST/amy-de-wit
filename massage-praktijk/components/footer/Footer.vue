@@ -12,13 +12,6 @@
           met
           mij op te nemen. Ik sta klaar om je te helpen!</p>
 
-        <button class="secondary-button">Lees meer
-          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="26" cy="26" r="26" fill="#FFFBF6"/>
-            <path d="M17.3985 31.5513C16.9573 31.8835 16.8689 32.5105 17.2012 32.9516C17.5334 33.3928 18.1604 33.4812 18.6015 33.1489L17.3985 31.5513ZM34.0626 21.1396C34.1397 20.5927 33.7588 20.0869 33.2119 20.0099L24.2999 18.7543C23.753 18.6773 23.2472 19.0582 23.1702 19.6051C23.0931 20.1519 23.474 20.6577 24.0209 20.7348L31.9427 21.8508L30.8267 29.7726C30.7496 30.3195 31.1305 30.8253 31.6774 30.9023C32.2243 30.9793 32.7301 30.5985 32.8071 30.0516L34.0626 21.1396ZM18.6015 33.1489L33.6739 21.7989L32.4708 20.2012L17.3985 31.5513L18.6015 33.1489Z" fill="#1D5983"/>
-          </svg>
-        </button>
-
         <svg width="390" height="228" viewBox="0 0 390 228" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
               d="M112.761 93.0109C111.456 75.118 113.244 59.0145 118.728 47.8591C148.927 -13.573 249.936 -18.6095 273.443 48.7868C290.137 96.6336 272.38 163.522 232.855 198.601C168.23 255.946 117.738 161.423 112.737 93.0109H112.761Z"
@@ -31,6 +24,14 @@
               fill="#FFFBF6" fill-opacity="0.1"/>
         </svg>
 
+        <nuxt-link href="/contact" aria-label="Link naar pagina contact">
+              <button class="secondary-button">
+                  <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Stuur een bericht</span>
+              </button>
+        </nuxt-link>
       </div>
     </section>
 

@@ -72,104 +72,166 @@ a {
     color: var(--tertiary);
 }
 
-/* primary button */
+/* PRIMARY BUTTON  */
 
 .primary-button {
     position: relative;
-    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    background: transparent;
+    padding: 0;
     border: solid 1.5px var(--tertiary);
-    padding: 0.8rem 6rem 0.8rem 4rem;
-    font-family: bebas-neue-pro, sans-serif;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    background-color: transparent;
-    overflow: hidden;
-    z-index: 999;
-}
+    border-radius: 25px;
+    width: 14rem;
+    height: auto;
+  }
 
-button svg {
-    position: absolute;
-    margin-top: -1rem;
-    margin-left: 2.75rem;
-    transition: transform 0.3s ease;
-
-}
-
-.primary-button:hover{
-    color: white;
-    transition: transform 0.3s ease;
-}
-
-.primary-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 100%;
-    background-color: var(--secondary);
-    transition: left 0.5s;
-    z-index: -1;
-}
-
-.primary-button:hover::before {
-    left: 0;
-    z-index: -1;
-}
-
-.primary-button:hover svg {
-    transform: rotate(37deg);
-}
-
-/* secondary button  */
-
-.secondary-button {
+  .primary-button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
-    border-radius: 30px;
-    border: solid 1.5px var(--background-color);
-    padding: 0.8rem 6rem 0.8rem 4rem;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    right: 0;
+    background: var(--secondary);
+    border-radius: 23px;
+  }
+
+  .primary-button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--background-color);
+  }
+
+  .primary-button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+
+  .primary-button .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.30rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid var(--background-color);
+    border-right: 0.125rem solid var(--background-color);
+    transform: rotate(45deg);
+  }
+
+  .primary-button .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    inset: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--tertiary);
+    text-align: center;
     font-family: bebas-neue-pro, sans-serif;
     text-transform: uppercase;
     font-size: 1.3rem;
-    background-color: transparent;
-    overflow: hidden;
-    z-index: 999;
+  }
+
+  .primary-button:hover .circle {
+    width: 100%;
+  }
+
+  .primary-button:hover .circle .icon.arrow {
+    background: var(--background-color);
+    transform: translate(1rem, 0);
+  }
+
+  .primary-button:hover .button-text {
     color: var(--background-color);
-}
+  }
 
-.secondary-button button svg {
-    position: absolute;
-    margin-top: -0.90rem;
-    margin-left: 2.75rem;
-    transition: transform 0.3s ease;
-}
+  /* SECONDARY BUTTON  */
 
-.secondary-button:hover{
-    color: var(--primary);
-    transition: transform 0.3s ease;
-}
+  .secondary-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    background: transparent;
+    padding: 0;
+    border: solid 1.5px var(--background-color);
+    border-radius: 25px;
+    width: 15rem;
+    height: auto;
+  }
 
-.secondary-button::before {
-    content: '';
+  .secondary-button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    right: 0;
+    background: var(--background-color);
+    border-radius: 23px;
+  }
+
+  .secondary-button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
-    right: 0;
     bottom: 0;
-    left: 100%;
-    background-color: var(--background-color);
-    transition: left 0.5s;
-    z-index: -1;
-}
+    margin: auto;
+  }
 
-.secondary-button:hover::before {
-    left: 0;
-    z-index: -1;
-}
+  .secondary-button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
 
-.secondary-button:hover svg {
-    transform: rotate(37deg);
-}
+  .secondary-button .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.30rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid var(--primary);
+    border-right: 0.125rem solid var(--primary);
+    transform: rotate(45deg);
+  }
 
+  .secondary-button .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    inset: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--background-color);
+    text-align: center;
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
 
+  .secondary-button:hover .circle {
+    width: 100%;
+  }
 
+  .secondary-button:hover .circle .icon.arrow {
+    background: var(--primary);
+    transform: translate(1rem, 0);
+  }
+
+  .secondary-button:hover .button-text {
+    color: var(--primary);
+  }
 
