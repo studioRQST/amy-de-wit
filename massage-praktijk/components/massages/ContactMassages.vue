@@ -28,8 +28,12 @@
       <!-- hCaptcha Spam Protection -->
       <div class="h-captcha" data-captcha="true"></div>
 
-      <button type="submit">Verzenden</button>
-
+      <button class="primary-button">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+        <span class="button-text" typeof="submit">Verzenden</span>
+      </button>
     </form>
   </section>
 </template>
@@ -84,7 +88,7 @@ input {
 textarea {
   width: 100%;
   height: 15rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-radius: 5px;
   border: 2px solid var(--secondary);
   font-family: work-sans, sans-serif;

@@ -17,7 +17,12 @@
     <!-- hCaptcha Spam Protection -->
     <div class="h-captcha" data-captcha="true"></div>
 
-    <button type="submit">Verzenden</button>
+    <button class="primary-button">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+      <span class="button-text" typeof="submit">Verzenden</span>
+    </button>
 
   </form>
 </template>
