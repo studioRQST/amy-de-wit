@@ -19,15 +19,17 @@
         <li><nuxt-link href="/contact">Contact</nuxt-link></li>
       </ul>
       <div class="contact-items">
-        <div>
-          <h3>Contact</h3>
-          <nuxt-link href="mailto:info@amydewit.nl">info@amydewit.nl</nuxt-link>
-          <nuxt-link href="tel:+31610629690">+31610629690</nuxt-link>
-        </div>
-        <div>
-          <h3>Adres</h3>
-          <p>Elbaweg 30</p>
-          <p>1607 MP Hem</p>
+        <div class="flex-contain">
+          <div>
+            <h3>Contact</h3>
+            <nuxt-link href="mailto:info@amydewit.nl">info@amydewit.nl</nuxt-link>
+            <nuxt-link href="tel:+31610629690">+31610629690</nuxt-link>
+          </div>
+          <div>
+            <h3>Adres</h3>
+            <p>Elbaweg 30</p>
+            <p>1607 MP Hem</p>
+          </div>
         </div>
       </div>
     </div>
@@ -70,7 +72,7 @@
 
 .menu-btn {
   position: absolute;
-  z-index: 2;
+  z-index: 112;
   right: 1rem;
   top: 1.5rem;
   height: 50px;
@@ -109,14 +111,15 @@
 }
 
 .close {
-  z-index: 104;
+  z-index: 111;
   cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
+  top: 1.5rem; 
+  right: 3rem;
+  width: 50px; 
   height: 50px;
 }
+
 
 input[type="checkbox"] {
   display: none;
@@ -195,6 +198,7 @@ input[type="checkbox"] {
 }
 
 .contact-items {
+  z-index: 108;
   position: fixed;
   display: flex;
   gap: 2rem;
@@ -232,18 +236,124 @@ input[type="checkbox"] {
   text-transform: uppercase;
 }
 
-.contact-items a:hover,
-.contact-items p:hover {
+.contact-items a:hover {
   outline: none;
   font-weight: 600;
   text-decoration: underline;
 }
 
-.contact-items a:focus-visible,
-.contact-items p:focus-visible {
+.contact-items a:focus-visible {
   outline: none;
   font-weight: 600;
   text-decoration: underline;
+}
+
+@media (min-width: 50rem) {
+
+.logo {
+  margin: 2rem 0 0 3rem;
+}
+
+#active:checked ~ .wrapper{
+  right: 0;
+}
+
+.menu-btn {
+  right: 3rem;
+}
+
+.close {
+  right: 3rem;
+}
+
+.wrapper ul {
+  top: 15%;
+  padding-left: 2rem;
+}
+
+.wrapper ul li {
+  margin-bottom: 3rem;
+}
+
+.wrapper ul li a {
+  font-size: 4.5rem;
+}
+
+.contact-items {
+  gap: 3rem;
+  padding: 2rem 3rem;
+}
+
+.contact-items h3,
+.contact-items h4,
+.contact-items a,
+.contact-items p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+}
+
+@media (min-width: 70rem) {
+
+.logo {
+  margin: 2rem 0 0 4rem;
+}
+
+.close {
+    right: 3rem;
+    order: 2;
+  }
+
+.wrapper {
+  display: flex;
+  width: 100%; 
+  top: 0;
+}
+
+.wrapper ul {
+  width: 65%;
+  top: 25%;
+}
+
+.wrapper ul li {
+  margin-bottom: 6rem;
+}
+
+.wrapper ul li a {
+  font-size: 7rem;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  right: 0;
+  order: 1;
+}
+
+.flex-contain{
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+}
+
+.flex-contain div {
+  padding: 1rem 4rem 2rem 0; 
+}
+
+#active:checked + .menu-btn:before {
+  border-color: var(--background-color);
+  z-index: 110;
+}
+
+#active:checked + .menu-btn:after {
+  border-color: var(--background-color);
+  z-index: 110;
+}
+
 }
 
 </style>
+
