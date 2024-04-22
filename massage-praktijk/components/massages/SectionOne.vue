@@ -5,7 +5,7 @@
 <template>
   <section>
     <div class="flex-container">
-    <h2><span class="span-brown">Ontdek</span> mijn massages</h2>
+    <h1><span class="span-brown">Ontdek</span> mijn massages</h1>
     <h3>Welkom bij Massagepraktijk Amy de Wit</h3>
     <p>In mijn praktijk focus ik mij op twee effectieve massagebehandelingen die specifiek zijn ontworpen om herstel en
       welzijn te bevorderen.</p>

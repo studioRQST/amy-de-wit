@@ -3,8 +3,7 @@
 </script>
 
 <template>
-<ContactSectionOne/>
-
+    <ContactSectionOne/>
 </template>
 
 <style scoped>

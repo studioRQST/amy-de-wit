@@ -23,6 +23,15 @@
     padding: 8rem 1.5rem 3rem 1.5rem;
 }
 
+.intro-contain h1{
+    font-family: bebas-neue-pro, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: var(--primary);
+}
+
 .intro-contain span{
     color: var(--secondary);
     font-family: bebas-neue-pro, sans-serif;

@@ -5,7 +5,7 @@
 <template>
     <section>
         <div class="intro-contain">
-            <h2><span>Even</span> voorstellen</h2>
+            <h1><span>Even</span> voorstellen</h1>
         </div>
         <div class="image-description">
             <h3>Ontdek de Passie en Expertise Achter Amy de Wit</h3>

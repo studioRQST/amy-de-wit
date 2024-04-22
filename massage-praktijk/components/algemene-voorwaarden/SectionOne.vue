@@ -5,8 +5,8 @@
 <template>
     <section>
         <div class="intro-contain">
-            <h2>Algemene voorwaarden</h2>
-            <p>Belangrijke informatie voor een soepele behandeling</p>
+            <h1>Algemene voorwaarden</h1>
+            <h2>Belangrijke informatie voor een soepele behandeling</h2>
         </div>
         <div class="text-description">
             <h3>Algemene Voorwaarden</h3>
@@ -28,7 +28,7 @@
         padding: 8rem 1.5rem 2rem 1.5rem;
     }
 
-    .intro-contain p{
+    .intro-contain h2 {
         font-family: bebas-neue-pro, sans-serif;
         text-transform: uppercase;
         font-weight: 500;
