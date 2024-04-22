@@ -8,7 +8,6 @@
     <MassagesSportmassageSectionTwo/>
     <MassagesSportmassageSectionThree/>
     <MassagesSportmassageSectionFour/>
-    <MassagesContactMassages/>
   </section>
 </template>
 

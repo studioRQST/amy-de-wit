@@ -6,6 +6,7 @@
   <section>
     <NavbarHeader/>
     <MassagesSportmassage/>
+    <MassagesContactMassages/>
     <Footer/>
   </section>
 </template>

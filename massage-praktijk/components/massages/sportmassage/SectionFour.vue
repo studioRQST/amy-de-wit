@@ -6,8 +6,8 @@
   <section>
     <h2>Persoonlijk <span>advies</span> en <span>begeleiding</span></h2>
     <div class="container-text">
+      <h3>Jouw Weg naar Optimaal Herstel</h3>
       <p>
-        <h3>Jouw Weg naar Optimaal Herstel</h3>
         Nadat ik jouw persoonlijke situatie heb geëvalueerd, werk ik samen met jou aan een aangepast stappenplan om de
         massage perfect af te stemmen op jouw sportieve behoeften. Als er specifieke klachten zijn, kan ik je ook
         adviseren om een fysiotherapeut, huisarts of sportarts te raadplegen voor verdere behandeling.

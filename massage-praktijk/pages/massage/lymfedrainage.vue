@@ -4,8 +4,10 @@
 
 <template>
   <div>
-  <Header/>
-  <Footer/>
+    <NavbarHeader/>
+    <MassagesLymfedrainage/>
+    <MassagesContactMassages/>
+    <Footer/>
   </div>
 </template>
 
