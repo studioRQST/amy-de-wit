@@ -44,6 +44,10 @@ h2 {
   color: var(--secondary);
 }
 
+h3{
+  margin-top: 1.5rem;
+}
+
 .image-overlay div{
   overflow: clip;
   width: 100%;
