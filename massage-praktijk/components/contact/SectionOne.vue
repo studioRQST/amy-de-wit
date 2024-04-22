@@ -19,13 +19,13 @@
 
       <!-- Form Inputs. Each input must have a name="" attribute -->
       <label for="naam">Naam:</label>
-      <input type="text" name="name" required>
+      <input placeholder=" Jouw naam..." type="text" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" name="email" required>
+      <label for="e-mail">Email:</label>
+      <input placeholder=" Jouw e-mailadres..." type="email" name="email" required>
 
       <label for="bericht">Jouw bericht:</label>
-      <textarea name="message" required></textarea>
+      <textarea placeholder=" Typ hier jouw bericht..."name="message" required></textarea>
 
       <!-- hCaptcha Spam Protection -->
       <div class="h-captcha" data-captcha="true"></div>
@@ -62,22 +62,29 @@ form {
 label {
   display: block;
   margin-bottom: 0.5rem;
+  font-family: work-sans, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--tertiary);
+
 }
 
 input {
   height: 1.8rem;
-  width: 18rem;
-  margin-bottom: 0.5rem;
+  width: 19rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   border: 2px solid var(--secondary);
+  font-family: work-sans, sans-serif;
 }
 
 textarea {
   height: 10rem;
-  width: 18rem;
-  margin-bottom: 0.5rem;
+  width: 19rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   border: 2px solid var(--secondary);
+  font-family: work-sans, sans-serif;
 }
 
 input:focus,
