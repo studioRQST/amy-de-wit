@@ -29,7 +29,7 @@ section {
 .flex-wrapper-text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-left: 1.5rem;
 }
 

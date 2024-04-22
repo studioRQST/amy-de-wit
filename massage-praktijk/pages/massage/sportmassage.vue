@@ -4,8 +4,8 @@
 
 <template>
   <section>
-    <MassagesSportmassage/>
     <NavbarHeader/>
+    <MassagesSportmassage/>
     <Footer/>
   </section>
 </template>
