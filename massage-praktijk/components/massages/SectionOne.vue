@@ -29,7 +29,7 @@ h3 , p {
 }
 
 .flex-container {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 span {

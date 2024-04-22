@@ -51,11 +51,11 @@ h2 {
 }
 
 .flex-wrapper-text {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 form {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   margin-bottom: 4rem;
 }
 
