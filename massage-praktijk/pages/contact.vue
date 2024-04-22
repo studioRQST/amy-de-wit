@@ -4,7 +4,9 @@
 
 <template>
   <div>
-    <NavbarNavBar/>
+    <NavbarHeader/>
+    <ContactPage/>
+    <Footer/>
   </div>
 </template>
 
