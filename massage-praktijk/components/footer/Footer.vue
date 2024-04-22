@@ -51,9 +51,8 @@
     <section class="footer-part-three">
       <div>
         <h3>
-          Copyright © 2024 massagepraktijk amy de wit  •  powered by Studio RQST  • <span>algemene voorwaarden</span>
+          Copyright © 2024 massagepraktijk amy de wit  •  powered by Studio RQST  • <nuxt-link href="/algemene-voorwaarden" aria-label="Link naar pagina algemene voorwaarden">algemene voorwaarden</nuxt-link>
         </h3>
-
       </div>
     </section>
 
@@ -124,4 +123,24 @@ svg {
   padding-right: 2rem;
   padding-left: 2rem;
 }
+
+a{
+  font-family: work-sans, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:focus{
+  text-decoration: underline;
+  outline: none
+}
+
 </style>

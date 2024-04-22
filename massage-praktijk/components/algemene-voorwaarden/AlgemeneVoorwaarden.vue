@@ -3,12 +3,9 @@
 </script>
 
 <template>
-<div>
-  <NavbarHeader/>
-  <HomePage/>
-  <FooterNgs/>
-  <Footer/>
-</div>
+    <div>
+      <AlgemeneVoorwaardenSectionOne/>
+    </div>
 </template>
 
 <style scoped>
