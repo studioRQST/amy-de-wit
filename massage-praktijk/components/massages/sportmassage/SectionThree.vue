@@ -17,10 +17,8 @@
 
 <style scoped>
 section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  padding-left: 1.5rem;
   background-color: var(--primary);
+  padding: 4rem 1.5rem;
 }
 
 h2 {

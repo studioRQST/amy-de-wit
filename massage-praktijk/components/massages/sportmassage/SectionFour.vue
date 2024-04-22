@@ -25,9 +25,7 @@
 
 <style scoped>
 section {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  margin-left: 1.5rem;
+  margin: 4rem 1.5rem;
 }
 
 span {
@@ -39,6 +37,10 @@ span {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+h3{
+  margin-top: 1.5rem;
 }
 
 .p-bold {

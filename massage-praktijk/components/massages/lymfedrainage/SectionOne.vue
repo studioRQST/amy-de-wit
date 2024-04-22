@@ -29,8 +29,8 @@ section {
 .flex-wrapper-text {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-left: 1.5rem;
+  gap: 1rem;
+  margin: 0 1.5rem 4rem 1.5rem;
 }
 
 span {
@@ -39,7 +39,13 @@ span {
 }
 
 h2 {
+  font-size: 3rem;
+  line-height: 3rem;
   color: var(--secondary);
+}
+
+.flex-wrapper-text h3{
+  margin-top: 1rem;
 }
 
 .image-overlay div {
