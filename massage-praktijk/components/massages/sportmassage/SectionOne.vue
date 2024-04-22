@@ -4,11 +4,13 @@
 
 <template>
   <section>
-    <div class="flex-container">
-    <h2><span class="span-brown">Ontdek</span> mijn massages</h2>
-    <h3>Welkom bij Massagepraktijk Amy de Wit</h3>
-    <p>In mijn praktijk focus ik mij op twee effectieve massagebehandelingen die specifiek zijn ontworpen om herstel en
-      welzijn te bevorderen.</p>
+    <div class="flex-wrapper-text">
+    <h1>Sportmassage</h1>
+    <h2>Optimaliseer jouw prestaties!</h2>
+    <h3>Ontdek de Voordelen van Sportmassage</h3>
+    <p>Welkom op de pagina gewijd aan sportmassage bij Massagepraktijk Amy de Wit. Een sportmassage is een doeltreffende
+      behandeling die zich richt op het optimaliseren van jouw prestaties door zowel voor als na het sporten te
+      ondersteunen. </p>
     </div>
 
     <div class="image-overlay">
@@ -20,25 +22,15 @@
 </template>
 
 <style scoped>
-section {
-  margin-top: 8rem;
-}
-
-h3 , p {
-  margin-top: 2rem;
-}
-
-.flex-container {
+.flex-wrapper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   margin-left: 1.5rem;
 }
 
-span {
-  display: block;
-  font-family: bebas-neue-pro, sans-serif;
-}
-
-.span-brown {
-  color:  var(--secondary);
+h2 {
+  color: var(--secondary);
 }
 
 .image-overlay div{
@@ -55,6 +47,5 @@ span {
   height: 100%;
   opacity: 0.8;
 }
-
 
 </style>
