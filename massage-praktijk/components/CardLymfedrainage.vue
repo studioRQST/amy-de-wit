@@ -8,7 +8,7 @@
     <div class="image-description">
         <h3>Lymfedrainage</h3>
         <h4>Ontdek de Zachte Kracht van Lymfedrainage</h4>
-        <nuxt-link href="/" aria-label="Link naar pagina lymfedrainage">
+        <nuxt-link href="/massage/lymfedrainage" aria-label="Link naar pagina lymfedrainage">
             <button class="primary-button">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>

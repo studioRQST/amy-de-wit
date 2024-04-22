@@ -16,7 +16,7 @@
         lymfestelsel. Door zachte, ritmische bewegingen worden vocht en afvalstoffen afgevoerd, wordt het immuunsysteem
         gestimuleerd en wordt het lichaam in balans gebracht. Deze massage is ideaal voor het verminderen van zwelling,
         het bevorderen van ontgifting en het ondersteunen van het algemene welzijn.</p>
-        <nuxt-link href="/" aria-label="Link naar pagina Lymfedrainage">
+        <nuxt-link href="/massage/lymfedrainage" aria-label="Link naar pagina Lymfedrainage">
             <button class="primary-button">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
