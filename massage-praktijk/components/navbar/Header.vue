@@ -12,12 +12,65 @@
     </label>
     <label for="active" class="close"></label>
     <div class="wrapper">
+
       <ul>
-        <li><nuxt-link href="/">Home</nuxt-link></li>
-        <li><nuxt-link href="/massages">Massages</nuxt-link></li>
-        <li><nuxt-link href="/over-mij">Over Mij</nuxt-link></li>
-        <li><nuxt-link href="/contact">Contact</nuxt-link></li>
+        <li><nuxt-link href="/" data-text="Home">Home</nuxt-link></li>
+        <li><nuxt-link href="/massages" data-text="Massages">Massages</nuxt-link></li>
+        <li><nuxt-link href="/over-mij" data-text="Over Mij">Over Mij</nuxt-link></li>
+        <li><nuxt-link href="/contact" data-text="Contact">Contact</nuxt-link></li>
       </ul>
+
+      <nav class="menu">
+			<div class="menu__item">
+				<nuxt-link href="/" class="menu__item-link">Home</nuxt-link>
+				<img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Home</span>
+						<span>Home</span>
+						<span>Home</span>
+						<span>Home</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<nuxt-link href="/massages" class="menu__item-link">Massages</nuxt-link>
+				<img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Massages</span>
+						<span>Massages</span>
+						<span>Massages</span>
+						<span>Massages</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<nuxt-link href="/over-mij" class="menu__item-link">Over mij</nuxt-link>
+				<img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Over mij</span>
+						<span>Over mij</span>
+						<span>Over mij</span>
+						<span>Over mij</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<nuxt-link href="/contact" class="menu__item-link">Contact</nuxt-link>
+				<img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Contact</span>
+						<span>Contact</span>
+						<span>Contact</span>
+						<span>Contact</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
       <div class="contact-items">
         <div class="flex-contain">
           <div>
@@ -37,6 +90,10 @@
 </template>
 
 <style scoped>
+
+.menu{
+  display: none;
+}
 
 .nav-open {
   overflow: hidden;
@@ -142,7 +199,7 @@ input[type="checkbox"] {
 .wrapper ul {
   position: absolute;
   width: 100%;
-  top: 25%;
+  top: 20%;
   left: 0;
   height: 100%;
   list-style: none;
@@ -205,7 +262,6 @@ input[type="checkbox"] {
   width: 100%;
   bottom: 0;
   background-color: var(--primary);
-  padding: 1.5rem 0;
   transform: translateX(100%);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -312,7 +368,8 @@ input[type="checkbox"] {
 }
 
 .wrapper ul {
-  width: 65%;
+  display: none;
+  width: 70%;
   top: 25%;
 }
 
@@ -327,7 +384,7 @@ input[type="checkbox"] {
 .contact-items {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 30%;
   height: 100%;
   right: 0;
   order: 1;
@@ -353,7 +410,112 @@ input[type="checkbox"] {
   z-index: 110;
 }
 
+.menu {
+  display: block;
+	padding: 20vh 0;
+	--offset: 20vw;
+	--move-initial: calc(-25% + var(--offset));
+	--move-final: calc(-50% + var(--offset));
+	counter-reset: menu;
 }
+
+.menu__item {
+	cursor: default;
+	position: relative;
+	padding: 0rem 10rem;
+  margin-bottom: 2rem;
+}
+
+.menu__item-link {
+	cursor: pointer;
+  text-decoration: none;
+}
+
+.menu__item-link:hover {
+	transition-duration: 0.1s;
+	opacity: 0;
+}
+
+.menu__item-img {
+  z-index: 120;
+	pointer-events: none;
+	position: absolute;
+	height: 30vh;
+	max-height: 300px;
+	opacity: 0;
+	left: 85vw;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+}
+
+.menu__item-link:hover + .menu__item-img {
+	opacity: 1;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+	transition: all 0.4s;
+}
+
+.marquee {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.marquee__inner {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marquee 5s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.menu__item-link:hover ~ .marquee .marquee__inner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.marquee span {
+	text-align: center;
+}
+
+.menu__item-link {
+  font-family: bebas-neue-pro, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 7rem;
+  line-height: 7rem;
+  color: var(--primary);
+  white-space: nowrap;
+	padding: 0 1.5rem;
+}
+
+.marquee span {
+  font-family: bebas-neue-pro, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 7rem;
+  line-height: 7rem;
+  color: var(--secondary);
+  white-space: nowrap;
+	padding: 0 1.5rem;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+}
+
 
 </style>
 
