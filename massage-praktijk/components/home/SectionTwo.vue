@@ -24,6 +24,10 @@
     padding: 5rem 1.5rem 2rem 1.5rem;
 }
 
+.intro-contain h2{
+    max-width: 20rem;
+}
+
 .intro-contain span{
     font-family: bebas-neue-pro, sans-serif;
     color: var(--secondary);

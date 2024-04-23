@@ -75,6 +75,8 @@ span {
 @media only screen and (min-width: 48rem) {
   h1 {
     margin-left: 1.5rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
 
   .flex-container img {

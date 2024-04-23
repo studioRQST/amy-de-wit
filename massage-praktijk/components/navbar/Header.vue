@@ -5,9 +5,19 @@
         <NavbarMainLogo alt="Logo van Amy de Wit"/>
       </nuxt-link>
     </div>
+    <div class="menu-contact-button">
+      <nuxt-link href="/contact" aria-label="Link naar pagina contact">
+            <button class="primary-button">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Contact</span>
+            </button>
+        </nuxt-link>
+      </div>
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn" aria-label="Toggle Menu">
-      <!-- <p>Menu</p> -->
+      <p>Menu</p>
       <span></span>
     </label>
     <label for="active" class="close"></label>
@@ -91,6 +101,10 @@
 
 <style scoped>
 
+.menu-contact-button{
+  display: none;
+}
+
 .menu{
   display: none;
 }
@@ -100,13 +114,16 @@
 }
 
 .sticky-header {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 101;
   background-color: var(--background-color);
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 1px #EFE6DC;
 }
 
 .logo {
@@ -140,11 +157,14 @@
 }
 
 .menu-btn p {
+  position: absolute;
+  top: 0.9rem;
+  right: 4rem;
   font-family: bebas-neue-pro, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.3rem;
-  text-align: left;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-btn span,
@@ -306,20 +326,27 @@ input[type="checkbox"] {
 
 @media (min-width: 50rem) {
 
+.sticky-header {
+  padding: 1rem 0 2rem 0;
+}
+
 .logo {
   margin: 2rem 0 0 3rem;
 }
 
 #active:checked ~ .wrapper{
   right: 0;
+  top: 2.5rem;
 }
 
 .menu-btn {
   right: 3rem;
+  top: 2.5rem;
 }
 
 .close {
   right: 3rem;
+  top: 2.5rem;
 }
 
 .wrapper ul {
@@ -337,7 +364,7 @@ input[type="checkbox"] {
 
 .contact-items {
   gap: 3rem;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .contact-items h3,
@@ -352,6 +379,15 @@ input[type="checkbox"] {
 
 @media (min-width: 70rem) {
 
+.menu-contact-button{
+  display: block;
+  margin: 1.5rem 15rem 0 0;
+}
+
+#active:checked + .menu-btn p {
+  color: white;
+}
+
 .logo {
   margin: 2rem 0 0 4rem;
 }
@@ -359,7 +395,7 @@ input[type="checkbox"] {
 .close {
     right: 3rem;
     order: 2;
-  }
+}
 
 .wrapper {
   display: flex;
@@ -410,9 +446,11 @@ input[type="checkbox"] {
   z-index: 110;
 }
 
+/* Nieuwe nav desktop  */
+
 .menu {
   display: block;
-	padding: 20vh 0;
+	padding: 15vh 0;
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
