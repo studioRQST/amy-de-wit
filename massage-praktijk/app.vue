@@ -21,9 +21,9 @@
   height: 4rem;
   position: fixed;
   top: auto;
-  bottom: 2rem;
+  bottom: 1rem;
   left: auto;
-  right: 2rem;
+  right: 1rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -46,6 +46,13 @@
 .whatsapp-wrapper:hover .whatsapp-background {
   transform: scale(1.1);
   box-shadow: 0 0 10px var(--secondary); /* Voeg een lichte schaduw toe */
+}
+
+@media (min-width: 40rem){
+  .whatsapp-wrapper{
+    bottom: 3rem;
+    right: 3rem;
+  }
 }
 
 </style>

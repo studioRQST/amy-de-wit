@@ -235,7 +235,7 @@ a {
     color: var(--primary);
   }
 
-  @media (min-width: 50rem){
+  @media (min-width: 40rem){
     
     h1 {
         font-size: 6rem;
