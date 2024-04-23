@@ -83,10 +83,10 @@
     opacity: 0.8;
 }
 
-@media (min-width: 50rem){
+@media (min-width: 40rem){
 
 .intro-contain{
-    padding: 8rem 5rem 3rem 5rem;
+    padding: 10rem 5rem 3rem 5rem;
 }
 
 .intro-contain h1{

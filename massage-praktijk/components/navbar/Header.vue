@@ -123,7 +123,7 @@
   z-index: 101;
   background-color: var(--background-color);
   padding-bottom: 1.5rem;
-  border-bottom: solid 1px #EFE6DC;
+  /* border-bottom: solid 1px #EFE6DC; */
 }
 
 .logo {
@@ -324,7 +324,7 @@ input[type="checkbox"] {
   text-decoration: underline;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 40rem) {
 
 .sticky-header {
   padding: 1rem 0 2rem 0;
