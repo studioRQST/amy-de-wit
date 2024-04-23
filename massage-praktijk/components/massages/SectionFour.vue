@@ -6,7 +6,7 @@
   <section class="card-element">
     <div class="image-overlay">
       <div>
-        <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
+        <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage">
       </div>
     </div>
     <div class="image-description">
@@ -57,6 +57,16 @@ section {
 
 .image-description button {
   margin: 2rem 0;
+}
+
+@media only screen and (min-width: 48rem) {
+  .card-element {
+    margin-left: 18rem;
+  }
+
+  .image-description {
+    width: 85%;
+  }
 }
 
 </style>

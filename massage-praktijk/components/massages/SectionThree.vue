@@ -59,4 +59,14 @@ section {
   margin: 2rem 0;
 }
 
+@media only screen and (min-width: 48rem) {
+  .card-element {
+    margin-left: 5rem;
+  }
+
+  .image-description {
+    width: 55%;
+  }
+}
+
 </style>
