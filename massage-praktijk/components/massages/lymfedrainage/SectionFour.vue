@@ -4,40 +4,40 @@
 
 <template>
   <section>
-    <h2><span>Lymfe</span> taping</h2>
     <div class="container-text">
+      <h2><span>Lymfe</span> taping</h2>
 
       <h3>Herstel en Verlichting voor Weefselschade</h3>
-      <p>
-        Herstel en Verlichting voor Weefselschade
-        Lymfe taping is een geavanceerde techniek waarbij elastisch tape wordt gebruikt om vochtafvoer te bevorderen en
-        bindweefselproblemen te verminderen. Bij Massagepraktijk Amy de Wit wordt deze methode toegepast als effectieve
-        aanvulling op de behandeling van verschillende aandoeningen, waaronder sportblessures, littekens en
-        postoperatief herstel. Het huidvriendelijke en waterbestendige tape blijft enkele dagen zitten, wat zorgt voor
-        langdurige ondersteuning bij het herstelproces.
-      </p>
-      <p>Bij Massagepraktijk Amy de Wit wordt deze methode toegepast als effectieve aanvulling op de behandeling van
-        verschillende aandoeningen, waaronder sportblessures, littekens en postoperatief herstel. Het huidvriendelijke
-        en waterbestendige tape blijft enkele dagen zitten, wat zorgt voor langdurige ondersteuning bij het
-        herstelproces.</p>
+    </div>
+
+
+    <div class="flex-wrapper-image">
+      <div class="flex-wrapper-text">
+        <p>
+          Herstel en Verlichting voor Weefselschade
+          Lymfe taping is een geavanceerde techniek waarbij elastisch tape wordt gebruikt om vochtafvoer te bevorderen
+          en
+          bindweefselproblemen te verminderen. Bij Massagepraktijk Amy de Wit wordt deze methode toegepast als
+          effectieve
+          aanvulling op de behandeling van verschillende aandoeningen, waaronder sportblessures, littekens en
+          postoperatief herstel. Het huidvriendelijke en waterbestendige tape blijft enkele dagen zitten, wat zorgt voor
+          langdurige ondersteuning bij het herstelproces.
+        </p>
+        <p>Bij Massagepraktijk Amy de Wit wordt deze methode toegepast als effectieve aanvulling op de behandeling van
+          verschillende aandoeningen, waaronder sportblessures, littekens en postoperatief herstel. Het huidvriendelijke
+          en waterbestendige tape blijft enkele dagen zitten, wat zorgt voor langdurige ondersteuning bij het
+          herstelproces.</p>
+      </div>
+      <div class="image-overlay">
+        <div>
+          <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
+        </div>
+      </div>
     </div>
   </section>
-
-  <div class="image-overlay">
-    <div>
-      <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
-    </div>
-  </div>
 </template>
 
 <style scoped>
-section {
-  margin: 4rem 1.5rem;
-}
-
-h2 {
-  margin-bottom: 2rem;
-}
 
 span {
   font-family: bebas-neue-pro, sans-serif;
@@ -47,12 +47,22 @@ span {
 .container-text {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  margin-top: 4rem;
+  margin-left: 1.5rem;
+  gap: 1rem;
+}
+
+.flex-wrapper-text {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .image-overlay div {
   overflow: clip;
-  width: 100%;
+  width: 150%;
   height: 18rem;
   background-color: var(--secondary);
   margin-top: 2rem;
@@ -63,5 +73,30 @@ span {
   width: 100%;
   height: 100%;
   opacity: 0.8;
+}
+
+@media only screen and (min-width: 48rem) {
+
+
+  .flex-wrapper-image {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .flex-wrapper-text p {
+    width: 50%;
+  }
+
+  .image-overlay {
+    position: absolute;
+    margin-left: 30rem;
+
+  }
+
+  .image-overlay img {
+    width: 100%;
+  }
 }
 </style>

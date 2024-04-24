@@ -4,6 +4,7 @@
 
 <template>
   <section>
+    <div class="flex-wrapper">
     <h2>Voordelen van <span>lymfedrainage</span></h2>
     <ul>
       <li>Vermindert zwellingen en vochtophopingen</li>
@@ -13,7 +14,9 @@
       <li>Helpt bij het herstel na chirurgische ingrepen of letsel</li>
       <li>Verbetert de algehele gezondheid en vitaliteit</li>
     </ul>
+    </div>
   </section>
+
 </template>
 
 <style scoped>
@@ -39,5 +42,22 @@ ul {
 
 li {
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  section {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    margin: 0;
+  }
 }
 </style>

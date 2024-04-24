@@ -28,5 +28,17 @@ span {
   font-family: bebas-neue-pro, sans-serif;
 }
 
+@media only screen and (min-width: 48rem) {
+  section {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+  }
+
+  span {
+    display: inline;
+  }
+
+}
+
 
 </style>
