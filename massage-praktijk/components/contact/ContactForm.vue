@@ -33,11 +33,6 @@
 </template>
 
 <style scoped>
-
-form {
-  margin-left: 5rem;
-}
-
 label {
   display: block;
   margin-bottom: 0.5rem;
@@ -74,6 +69,10 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 48rem) {
+  form {
+    margin-left: 5rem;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: row;
