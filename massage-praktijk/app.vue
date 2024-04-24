@@ -14,9 +14,11 @@
   </div>
 </template>
 
-<style scoped>
 
-.whatsapp-wrapper{
+<style>
+
+/* WhatsApp-toepassing */
+.whatsapp-wrapper {
   width: 4rem;
   height: 4rem;
   position: fixed;
@@ -24,10 +26,10 @@
   bottom: 1rem;
   left: auto;
   right: 1rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.4s;
 }
 
-.whatsapp-background{
+.whatsapp-background {
   width: 100%;
   height: 100%;
   background-color: #32D951;
@@ -45,7 +47,7 @@
 
 .whatsapp-wrapper:hover .whatsapp-background {
   transform: scale(1.1);
-  box-shadow: 0 0 10px var(--secondary); /* Voeg een lichte schaduw toe */
+  box-shadow: 0 0 10px var(--secondary);
 }
 
 @media (min-width: 40rem){
@@ -54,5 +56,6 @@
     right: 3rem;
   }
 }
+
 
 </style>

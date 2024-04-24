@@ -41,10 +41,6 @@
     color: var(--secondary);
 }
 
-.intro-contain-text{
-    padding: 0rem 1.5rem 3.5rem 3.5rem;
-}
-
 .image-overlay div{
     overflow: clip;
     width: 100%;
@@ -70,6 +66,59 @@
 
 .image-description button{
     margin: 1rem 0;
+}
+
+@media (min-width: 48rem){
+
+    .intro-contain{
+        padding: 5rem 3rem 3rem 3rem;
+    }
+
+    .image-overlay div{
+        height: 20rem;
+    }
+
+    .image-overlay img{
+        width: 120%;
+    }
+
+    .image-description{
+        margin: 4rem 3rem 4rem 10rem;
+    }
+
+}
+
+@media (min-width: 70rem){
+
+    .intro-contain{
+        padding: 5rem 4rem 5rem 4rem;
+    }
+
+    .image-overlay div{
+        height: 25rem;
+    }
+
+    .image-overlay img{
+        width: 100%;
+    }
+
+    .image-description{
+        margin: 5rem 4rem 10rem 30rem ;
+    }
+
+}
+
+@media (min-width: 90rem){
+
+
+    .image-overlay div{
+        height: 35rem;
+    }
+
+    .image-description{
+        margin: 5rem 4rem 10rem 45rem ;
+    }
+
 }
 
 

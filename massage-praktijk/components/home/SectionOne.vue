@@ -1,17 +1,29 @@
 <template>
     <section>
-        <div class="intro-contain">
-            <h1>Verlicht<img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo"></h1>
-            <h1>Herstel <span>&</span></h1>
-            <h1>Vernieuw</h1>
+        <div class="container">
+            <div class="home-wrapper">
+                <div class="intro-contain">
+                    <h1>Verlicht<img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo">Herstel<span>&</span></h1>
+                </div>
+                <div class="wrapper">
+                    <h1>Vernieuw</h1>
+                    <div class="intro-contain-text">
+                        <img src="/static/icons/icon-star-brown.svg" alt="Icoon Ster">
+                        <h4>Ontdek de kracht van <span>lymfedrainage</span> en <span>sportmassage</span> voor een optimaal herstel</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="intro-contain-text">
-            <img src="/static/icons/icon-star-brown.svg" alt="Icoon Ster">
-            <h4>Ontdek de kracht van <span>lymfedrainage</span> en <span>sportmassage</span> voor een optimaal herstel</h4>
-        </div>
-        <div class="image-overlay">
-            <div>
-                <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
+        <div class="image-wrapper">
+            <div class="image-overlay">
+                <div>
+                    <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
+                </div>
+            </div>
+            <div class="image-overlay">
+                <div>
+                    <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
+                </div>
             </div>
         </div>
     </section>
@@ -19,30 +31,59 @@
 
 <style scoped>
 
+.image-overlay:nth-child(2) {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 47rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .intro-contain{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0 1.5rem;
-    padding: 8rem 1.5rem 3rem 1.5rem;
+    padding: 8rem 1.5rem 0 1.5rem;
 }
 
 .intro-contain h1{
-    display: flex;
     font-size: 6rem;
     line-height: 6rem;
-    text-align: left;
 }
 
 .intro-contain span{
     color: var(--secondary);
     font-family: bebas-neue-pro, sans-serif;
-    text-align: left;
-    margin-left: 1rem;
+    margin: 0 1.5rem;
 }
 
 .intro-contain img{
-    margin: 0 0 1rem 1rem;
+    margin: 0 1.5rem 1rem 1rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem 1rem 1.5rem;
+    text-align: left;
+}
+
+.wrapper h1{
+    font-size: 6rem;
+    line-height: 6rem;
+    padding: 0 0 3rem 0;
 }
 
 .intro-contain-text{
@@ -83,51 +124,115 @@
     opacity: 0.8;
 }
 
-@media (min-width: 40rem){
+@media (min-width: 48rem){
 
-.intro-contain{
-    padding: 10rem 5rem 3rem 5rem;
-}
-
-.intro-contain h1{
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-}
-
-.intro-contain-text{
-    padding: 0rem 5rem 3rem 5rem;
-}
-
-.intro-contain-text img {
-    animation: rotateStar 6s linear infinite; 
-}
-
-@keyframes rotateStar {
-    from {
-        transform: rotate(0deg);
+    .container{
+        padding: 3rem 0;
     }
-    to {
-        transform: rotate(360deg);
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
+
+    .intro-contain-text{
+        margin-top: 1rem;
+    }
+
+    .image-wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .image-overlay div{
+        width: 25rem;
+        height: 18rem;
+    }
+
+    .image-overlay:nth-child(2){
+        display: block;
+        padding-right: 3rem;
+        margin-top: -3rem
+    }
+
+    .image-overlay:nth-child(2) div{
+        width: 15rem;
+        height: 18rem;
+    }
+
 }
 
-.intro-contain-text span{
-    font-weight: 600;
+@media (min-width: 70rem){
+
+    .home-wrapper {
+        max-width: 58.5rem; 
+    }
+
+    .intro-contain h1{
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+
+    .wrapper h1{
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+
+    .image-overlay div{
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .image-overlay:nth-child(2){
+        display: block;
+        padding-right: 3rem;
+        margin-top: -3rem
+    }
+
+    .image-overlay:nth-child(2) div{
+        width: 15rem;
+        height: 20rem;
+    }
+
 }
 
-.image-overlay div{
-    overflow: clip;
-    width: 100%;
-    height: 18rem;
-    background-color: var(--secondary);
+@media (min-width: 90rem){
+
+    .container{
+        padding: 5rem 0;
+    }
+
+    .home-wrapper {
+        max-width: 64rem; 
+    }
+
+    .intro-contain h1{
+        font-size: 9rem;
+        line-height: 9rem;
+    }
+
+    .wrapper h1{
+        font-size: 9rem;
+        line-height: 9rem;
+    }
+
+    .image-wrapper{
+        margin-top: -3rem;
+        gap: 5rem;
+    }
+
+    .image-overlay:nth-child(2){
+        margin-top: -4rem
+    }
+
+    .image-overlay:nth-child(2) div{
+        width: 20rem;
+        height: 25rem;
+    }
+
 }
 
-.image-overlay img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-}
 
 </style>

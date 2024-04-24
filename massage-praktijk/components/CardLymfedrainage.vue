@@ -52,5 +52,37 @@ section{
     margin: 1rem 0;
 }
 
+@media (min-width: 48rem){
+
+    section{
+        padding: 4rem 0 0 5rem;
+    }
+    
+}
+
+@media (min-width: 70rem){
+
+    section{
+        padding: 10rem 0 0 10rem;
+    }
+
+    .image-overlay div{
+        width: 25rem;
+        height: 22rem;
+    }
+
+    .image-description{
+        max-width: 25rem;
+    }
+
+}
+
+@media (min-width: 90rem){
+
+    section{
+        padding: 10rem 0 0 15rem;
+    }
+
+}
 
 </style>
