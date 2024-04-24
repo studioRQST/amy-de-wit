@@ -5,11 +5,16 @@
     <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
     <!-- Form Inputs. Each input must have a name="" attribute -->
+    <div class="flex-container">
+      <div>
     <label for="naam">Naam</label>
     <input placeholder=" Jouw naam..." type="text" name="name" required>
-
+      </div>
+      <div>
     <label for="e-mail">E-mail</label>
     <input placeholder=" Jouw e-mailadres..." type="email" name="email" required>
+    </div>
+    </div>
 
     <label for="bericht">Jouw bericht</label>
     <textarea placeholder=" Typ hier jouw bericht..." name="message" required></textarea>
@@ -28,6 +33,10 @@
 </template>
 
 <style scoped>
+
+form {
+  margin-left: 5rem;
+}
 
 label {
   display: block;
@@ -64,4 +73,18 @@ textarea:focus {
   outline-color: var(--tertiary);
 }
 
+@media only screen and (min-width: 48rem) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+  }
+
+  input {
+    width: 160%;
+  }
+}
+
 </style>
+<script setup lang="ts">
+</script>
