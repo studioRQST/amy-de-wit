@@ -70,7 +70,7 @@
 }
 
 .intro-contain img{
-    margin: 0 1.5rem 1rem 1rem;
+    margin: 0 0 1rem 1rem;
 }
 
 .wrapper{
@@ -124,7 +124,7 @@
     opacity: 0.8;
 }
 
-@media (min-width: 48rem){
+@media (min-width: 45rem){
 
     .container{
         padding: 3rem 0;
@@ -140,10 +140,14 @@
         margin-top: 1rem;
     }
 
+    .intro-contain img{
+        margin: 0 1.5rem 1rem 1rem;
+    }
+
     .image-wrapper{
         display: flex;
         justify-content: center;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .image-overlay div{
@@ -153,7 +157,6 @@
 
     .image-overlay:nth-child(2){
         display: block;
-        padding-right: 3rem;
         margin-top: -3rem
     }
 
