@@ -89,14 +89,11 @@ span {
     width: 50%;
   }
 
-  .image-overlay {
-    position: absolute;
-    margin-left: 30rem;
-
-  }
-
   .image-overlay img {
-    width: 100%;
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    margin-left: -19rem;
   }
 }
 </style>

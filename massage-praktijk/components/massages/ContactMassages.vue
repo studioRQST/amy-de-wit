@@ -26,7 +26,7 @@
           <input placeholder=" Jouw e-mailadres..." type="email" name="email" required>
         </div>
       </div>
-      
+
       <label for="bericht">Jouw bericht:</label>
       <textarea placeholder=" Typ hier jouw bericht..."name="message" required></textarea>
 

@@ -117,14 +117,10 @@ span {
     gap: 1rem;
   }
 
-  .image-overlay  {
-    position: absolute;
-    margin-left: 30rem;
-
-  }
-
   .image-overlay img {
-    width: 100%;
+    width: 40%;
+    position: absolute;
+    margin-left: -19rem;
   }
 }
 

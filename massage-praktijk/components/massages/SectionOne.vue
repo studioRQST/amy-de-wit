@@ -87,6 +87,7 @@ span {
   .flex-wrapper {
     display: flex;
     flex-direction: row;
+
   }
 
   .flex-container-intro {
