@@ -197,7 +197,7 @@ a:focus {
   .svg-container svg {
     width: 40rem;
   }
-  
+
   .flex-wrapper-2 {
     display: flex;
     flex-direction: row;
