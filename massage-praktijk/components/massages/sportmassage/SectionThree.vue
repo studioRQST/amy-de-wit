@@ -4,6 +4,7 @@
 
 <template>
   <section>
+    <div class="flex-wrapper">
     <h2>Voordelen van sportmassage</h2>
     <ul>
       <li>Verbeterde doorbloeding en zuurstoftoevoer naar de spieren</li>
@@ -12,6 +13,7 @@
       <li>Preventie van blessures en overbelasting</li>
       <li>Verbeterde flexibiliteit en mobiliteit</li>
     </ul>
+    </div>
   </section>
 </template>
 
@@ -33,5 +35,20 @@ ul {
 
 li {
   margin-top: 1rem;
+}
+
+
+@media only screen and (min-width: 48rem) {
+
+  h2 {
+    margin-left: 8rem;
+  }
+
+ .flex-wrapper {
+   flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 }
 </style>
