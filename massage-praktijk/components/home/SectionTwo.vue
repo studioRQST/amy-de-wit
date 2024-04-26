@@ -74,8 +74,13 @@
         padding: 0;
     }
 
+    .intro-contain h2{
+        max-width: 24rem;
+    }
+
     .intro-contain img{
-        margin-bottom: 5rem;
+        margin: 0 3rem 6rem 0;
+        width: 1.5rem;
     }
 
     .intro-contain-text{

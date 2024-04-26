@@ -94,6 +94,11 @@
         padding: 5rem 4rem 5rem 4rem;
     }
 
+    .intro-contain img{
+        margin: 0 3rem 0 0;
+        width: 1.5rem;
+    }
+
     .image-overlay div{
         height: 25rem;
     }

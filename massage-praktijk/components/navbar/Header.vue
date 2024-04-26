@@ -310,7 +310,7 @@ input[type="checkbox"] {
 
 .contact-items {
   z-index: 108;
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0;
   background-color: var(--primary);

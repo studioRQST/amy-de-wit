@@ -122,7 +122,7 @@
 
     .intro-contain{
         padding: 11rem 4rem 8rem 4rem;
-        max-width: 40rem;
+        max-width: 50rem;
     }
 
     .description{
