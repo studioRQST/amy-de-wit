@@ -81,7 +81,7 @@ span {
 
   .flex-container img {
     display: inline;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 
   .flex-wrapper {
@@ -102,13 +102,51 @@ span {
     width: 50%;
   }
 
-  .image-overlay img {
+  .image-overlay div {
+    overflow: clip;
     position: absolute;
-    width: 45%;
+    width: 15rem;
     height: 15rem;
-    margin-left: -20rem;
-    top: 28%;
+    margin-left: -15rem;
 
+  }
+
+
+}
+
+@media (min-width: 70rem) {
+  section {
+
+  }
+}
+
+@media (min-width: 90rem) {
+  section {
+    margin-left: 3rem;
+  }
+
+  h1 {
+
+    margin-left: 6rem;
+  }
+
+  .flex-container img {
+    width: 2rem;
+  }
+
+  .flex-wrapper-intro {
+    margin-left: 5.5rem;
+  }
+
+  .flex-wrapper-intro p {
+    width: 40%;
+  }
+
+  .image-overlay img {
+    margin-left: -29rem;
+    width: 35%;
+    height: 25rem;
+    top: -30%;
   }
 }
 

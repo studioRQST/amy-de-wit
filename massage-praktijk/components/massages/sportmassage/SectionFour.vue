@@ -57,7 +57,7 @@ span {
 
 .image-overlay div {
   overflow: clip;
-  width: 150%;
+  width: 100%;
   height: 18rem;
   background-color: var(--secondary);
   margin-top: 2rem;
