@@ -26,7 +26,6 @@
         </div>
       </div>
     </div>
-
   </section>
 </template>
 
@@ -40,7 +39,11 @@ h3, p {
 }
 
 .flex-container, .flex-wrapper-intro {
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.flex-wrapper-intro p {
+  margin-bottom: 3rem;
 }
 
 .flex-container img {
@@ -67,7 +70,7 @@ span {
 .image-overlay img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 130%;
   opacity: 0.8;
 }
 

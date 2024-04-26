@@ -22,7 +22,7 @@
 <style scoped>
 section {
   background-color: var(--primary);
-  padding: 4rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 h2 {

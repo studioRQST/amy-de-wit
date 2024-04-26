@@ -20,7 +20,7 @@
 <style scoped>
 section {
   background-color: var(--primary);
-  padding: 4rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 h2 {
@@ -29,8 +29,7 @@ h2 {
 
 ul {
   color: white;
-  margin-top: 2rem;
-  margin-left: 1.5rem;
+  margin: 2rem 1.5rem 0 1.5rem;
 }
 
 li {

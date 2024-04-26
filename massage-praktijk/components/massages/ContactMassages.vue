@@ -45,12 +45,8 @@
 
 <style scoped>
 section {
-  margin-top: 4rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 5rem 1.5rem;
 }
-
-
 
 span {
   color: var(--secondary);
@@ -66,8 +62,6 @@ span {
 
 form {
   margin-top: 4rem;
-  margin-bottom: 4rem;
-
 }
 
 label {

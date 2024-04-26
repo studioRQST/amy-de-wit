@@ -15,11 +15,11 @@
 
 <style scoped>
 section {
-  margin: 4rem 1.5rem;
+  margin: 5rem 1.5rem;
 }
 
 p {
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 0 0;
 }
 
 span {

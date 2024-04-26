@@ -35,7 +35,6 @@ section {
   margin-top: 8rem;
 }
 
-
 h2 {
   font-size: 3rem;
   line-height: 3rem;
@@ -43,9 +42,9 @@ h2 {
 }
 
 p, h3 {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0 1.5rem 2rem 1.5rem;
 }
+
 
 .flex-container-text {
   display: flex;
@@ -65,6 +64,10 @@ span {
 
 .flex-wrapper-text h3 {
   margin-top: 1rem;
+}
+
+.flex-wrapper-text p{
+  margin-bottom: 3rem;
 }
 
 .image-overlay div {

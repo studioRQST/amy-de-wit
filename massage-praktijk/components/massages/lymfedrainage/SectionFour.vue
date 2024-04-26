@@ -47,22 +47,20 @@ span {
 .container-text {
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
-  margin-left: 1.5rem;
-  gap: 1rem;
+  margin: 5rem 1.5rem 0 1.5rem;
+  gap: 2rem;
 }
 
 .flex-wrapper-text {
-  margin-top: 1rem;
-  margin-left: 1.5rem;
+  margin: 2rem 1.5rem 5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .image-overlay div {
   overflow: clip;
-  width: 150%;
+  width: 100%;
   height: 18rem;
   background-color: var(--secondary);
   margin-top: 2rem;
@@ -71,7 +69,7 @@ span {
 .image-overlay img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 130%;
   opacity: 0.8;
 }
 
