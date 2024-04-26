@@ -43,7 +43,7 @@
     padding: 0rem 1.5rem 3.5rem 3.5rem;
 }
 
-@media (min-width: 48rem){
+@media (min-width: 40rem){
 
     .wrapper{
         padding: 5rem 3rem;

@@ -52,7 +52,7 @@ section{
     margin: 1rem 0;
 }
 
-@media (min-width: 48rem){
+@media (min-width: 40rem){
 
     section{
         padding: 8rem 0 0 15rem;

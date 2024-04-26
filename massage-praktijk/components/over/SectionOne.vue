@@ -5,6 +5,7 @@
 <template>
     <section>
         <div class="intro-contain">
+            <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo">
             <h1><span>Even</span> voorstellen</h1>
         </div>
         <div class="image-description">
@@ -24,6 +25,10 @@
 
     .intro-contain{
         padding: 8rem 1.5rem 2rem 1.5rem;
+    }
+
+    .intro-contain img{
+        display: none;
     }
 
     .intro-contain span{
@@ -51,5 +56,79 @@
         height: 150%;
         opacity: 0.8;
     }
+
+@media (min-width: 40rem){
+
+    .intro-contain{
+        display: flex;
+        padding: 10rem 3rem 2rem 3rem;
+    }
+
+    .intro-contain img{
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .image-overlay div{
+        height: 20rem;
+    }
+
+    .image-description{
+        gap: 2rem;
+        padding: 0 3rem 5rem 5rem;
+    }
+}
+
+@media (min-width: 70rem){
+
+    .intro-contain{
+        display: flex;
+        padding: 12rem 4rem 5rem 4rem;
+    }
+
+    .intro-contain img{
+        width: 2rem;
+        margin-right: 4rem;
+    }
+
+    .image-description{
+        gap: 2rem;
+        padding: 0 3rem 10rem 10rem;
+        max-width: 50rem;
+    }
+
+    .image-overlay div{
+        height: 25rem;
+    }
+
+    .image-overlay img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 90rem){
+
+    .intro-contain{
+        padding: 14rem 4rem 5rem 4rem;
+    }
+
+    .intro-contain h1{
+        font-size: 9rem;
+    }
+
+    .intro-contain img{
+        margin-right: 7rem;
+    }
+
+    .image-description{
+        padding: 0 3rem 11rem 13rem;
+        max-width: 60rem;
+    }
+
+    .image-overlay div{
+        height: 35rem;
+    }
+}
+
 
 </style>

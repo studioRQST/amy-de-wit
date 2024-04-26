@@ -68,7 +68,7 @@
     margin: 1rem 0;
 }
 
-@media (min-width: 48rem){
+@media (min-width: 40rem){
 
     .intro-contain{
         padding: 5rem 3rem 3rem 3rem;
