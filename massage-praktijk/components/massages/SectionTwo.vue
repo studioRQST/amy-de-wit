@@ -3,14 +3,16 @@
 </script>
 
 <template>
+  <section>
   <div class="intro-contain">
     <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo">
-    <h2><span>Amy's</span>massages</h2>
+    <h2><span>Amy's</span> massages</h2>
   </div>
 
   <div class="intro-contain-text">
     <h4>Ervaar hoe <span>lymfedrainage</span> en <span>sportmassage</span> je herstel naar een hoger niveau tillen.</h4>
   </div>
+  </section>
 </template>
 
 <style scoped>
@@ -46,6 +48,35 @@
   h4 {
     width: 60%;
   }
+}
+
+@media (min-width: 70rem) {
+  section {
+    margin-top: 8rem;
+  }
+
+  h2 {
+    margin-left: 2rem;
+  }
+
+  h4 {
+    margin-left: 4.8rem;
+  }
+
+  .intro-contain img {
+    width: 1.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .intro-contain span {
+    display: inline;
+  }
+
+  .intro-contain {
+    margin-left: 2rem;
+  }
+
+
 }
 
 </style>

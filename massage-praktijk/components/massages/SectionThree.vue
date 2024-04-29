@@ -69,4 +69,11 @@ section {
   }
 }
 
+@media (min-width: 70rem) {
+  section {
+    margin-top: 3rem;
+    padding-left: 10rem;
+  }
+}
+
 </style>

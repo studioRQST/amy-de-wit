@@ -119,22 +119,15 @@ span {
 
 @media (min-width: 70rem) {
   section {
-
-  }
-}
-
-@media (min-width: 90rem) {
-  section {
     margin-left: 3rem;
   }
 
   h1 {
-
     margin-left: 6rem;
   }
 
-  .flex-container img {
-    width: 2rem;
+  .flex-wrapper img {
+    width: 1.5rem;
   }
 
   .flex-wrapper-intro {
@@ -142,14 +135,23 @@ span {
   }
 
   .flex-wrapper-intro p {
-    width: 40%;
+    width: 50%;
   }
 
-  .image-overlay img {
-    margin-left: -29rem;
-    width: 35%;
+  .image-overlay div {
+    margin-left: -20rem;
+    width: 20rem;
+    height: 20rem;
+    margin-top: -2rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .image-overlay div {
+    margin-left: -25rem;
+    width: 25rem;
     height: 25rem;
-    top: -30%;
+    margin-top: -5rem;
   }
 }
 
