@@ -50,6 +50,10 @@
   box-shadow: 0 0 10px var(--secondary);
 }
 
+.whatsapp-wrapper:focus .whatsapp-background {
+  background-color: #128C7E;
+}
+
 @media (min-width: 40rem){
   .whatsapp-wrapper{
     bottom: 3rem;

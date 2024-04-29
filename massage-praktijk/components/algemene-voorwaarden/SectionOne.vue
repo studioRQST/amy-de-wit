@@ -5,9 +5,10 @@
 <template>
     <section>
         <div class="intro-contain">
+            <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo">
             <h1>Algemene voorwaarden</h1>
-            <h2>Belangrijke informatie voor een soepele behandeling</h2>
         </div>
+        <h2>Belangrijke informatie voor een soepele behandeling</h2>
         <div class="text-description">
             <h3>Algemene Voorwaarden</h3>
             <p>Welkom bij Massagepraktijk Amy de Wit. Voordat je gebruik maakt van onze diensten, vragen we je vriendelijk om deze algemene voorwaarden zorgvuldig door te lezen. Deze voorwaarden zijn van toepassing op alle behandelingen en afspraken die plaatsvinden bij Massagepraktijk Amy de Wit.</p>
@@ -24,25 +25,37 @@
 
 <style scoped>
 
-    .intro-contain{
-        padding: 8rem 1.5rem 2rem 1.5rem;
+    section{
+        padding: 8rem 0 5rem 0;
     }
 
-    .intro-contain h2 {
+    .intro-contain{
+        padding: 0 1.5rem;
+    }
+
+    .intro-contain img{
+        display: none;
+    }
+
+    h2 {
         font-family: bebas-neue-pro, sans-serif;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 3rem;
         line-height: 3rem;
         color: var(--secondary);
-        margin-top: 1rem;
+        padding: 0 1.5rem;
     }
 
     .text-description{
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        padding: 0 1.5rem 3rem 1.5rem;
+        padding: 2rem 1.5rem 3rem 1.5rem;
+    }
+
+    @media (min-width: 40rem){
+
     }
 
 </style>

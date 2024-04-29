@@ -70,7 +70,7 @@ span {
   }
 
   p{
-    margin: 0 20rem;
+    margin: 1rem 15rem;
   }
 
   section div:nth-child(2){
