@@ -37,7 +37,6 @@ span {
   span {
     display: inline;
   }
-
 }
 
 @media only screen and (min-width: 70rem) {

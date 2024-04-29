@@ -37,7 +37,17 @@ span {
   span {
     display: inline;
   }
+}
 
+@media only screen and (min-width: 70rem) {
+  section {
+    margin-top: 15rem;
+    margin-left: 4rem;
+  }
+
+  p {
+    width: 80%;
+  }
 }
 
 

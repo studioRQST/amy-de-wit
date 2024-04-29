@@ -39,15 +39,27 @@ li {
 
 @media only screen and (min-width: 48rem) {
 
-  h2 {
-    margin-left: 8rem;
-  }
+
 
  .flex-wrapper {
    flex-direction: column;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   margin-left: 5rem;
  }
 }
+
+@media only screen and (min-width: 70rem) {
+  span {
+    display: inline;
+  }
+
+  .flex-wrapper {
+    margin-left: 10rem;
+  }
+
+  ul {
+   margin-left: 2rem;
+  }
+}
+
 </style>

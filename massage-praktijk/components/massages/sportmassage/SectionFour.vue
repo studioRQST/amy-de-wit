@@ -82,11 +82,43 @@ span {
     width: 50%;
   }
 
-  .image-overlay img {
-    width: 40%;
-    height: 80%;
+  .image-overlay div {
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     margin-left: -19rem;
   }
 }
+
+@media only screen and (min-width: 70rem) {
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  section {
+    margin-left: 2.5rem;
+    margin-bottom: 8rem;
+  }
+
+
+  .image-overlay div {
+    margin-left: -25rem;
+    margin-top: -1rem;
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+section {
+  margin-bottom: 15rem;
+}
+
+  .image-overlay div {
+    margin-left: -30rem;
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
 </style>

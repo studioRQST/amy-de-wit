@@ -19,7 +19,7 @@
         <h3>Ontdek de Voordelen van Sportmassage</h3>
         <p>Welkom op de pagina gewijd aan sportmassage bij Massagepraktijk Amy de Wit. Een sportmassage is een
           doeltreffende behandeling die zich richt op het optimaliseren van jouw prestaties door zowel voor als na het
-          sporten te ondersteunen..</p>
+          sporten te ondersteunen.</p>
       </div>
       <div class="image-overlay">
         <div>
@@ -120,10 +120,64 @@ span {
     gap: 1rem;
   }
 
-  .image-overlay img {
-    width: 40%;
+  .image-overlay div {
+    width: 20rem;
     position: absolute;
     margin-left: -19rem;
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  section {
+    margin-top: 12rem;
+  }
+
+  h1 {
+    margin-left: 5rem;
+  }
+
+  h2 {
+    margin-left: 6.6rem;
+    font-size: 4.5rem;
+  }
+
+  h3, p {
+    width: 45%;
+  }
+
+  .flex-container-text {
+    margin-left: 4rem;
+  }
+
+  .flex-wrapper-image {
+    margin-top: 4rem;
+    margin-left: 4.1rem;
+  }
+
+  .image-overlay div {
+    width: 25rem;
+    height: 20rem;
+    margin-left: -25rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  .flex-container-text img {
+    width: 2rem;
+  }
+
+  h2 {
+    margin-left: 7rem;
+  }
+
+  .flex-wrapper-image {
+    margin-left: 5rem;
+  }
+
+  .image-overlay div {
+    width: 30rem;
+    height: 25rem;
+    margin-left: -30rem;
   }
 }
 
