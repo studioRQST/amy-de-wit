@@ -74,8 +74,6 @@ span {
 }
 
 @media only screen and (min-width: 48rem) {
-
-
   .flex-wrapper-image {
     position: relative;
     display: flex;
@@ -87,11 +85,34 @@ span {
     width: 50%;
   }
 
-  .image-overlay img {
-    width: 40%;
-    height: 50%;
+  .image-overlay div {
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     margin-left: -19rem;
   }
 }
+
+@media only screen and (min-width: 70rem) {
+  section {
+    margin-left: 2.5rem;
+    margin-bottom: 8rem;
+  }
+
+  .image-overlay div {
+    margin-left: -25rem;
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+
+  .image-overlay div {
+    margin-left: -30rem;
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
 </style>

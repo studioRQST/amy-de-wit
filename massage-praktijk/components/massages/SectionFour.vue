@@ -11,7 +11,7 @@
     </div>
     <div class="image-description">
       <h3>Sportmassage</h3>
-      <h4>Optimaliseer Jouw Prestaties met Sportmassagee</h4>
+      <h4>Optimaliseer Jouw Prestaties met Sportmassage</h4>
       <p>Sportmassage is een dynamische massagebehandeling die specifiek gericht is op het verbeteren van de
         doorbloeding van de spieren, het verminderen van spierspanning en het bevorderen van herstel na fysieke
         activiteit. Of je nu een atleet bent die zijn prestaties wil verbeteren of gewoon op zoek bent naar verlichting
@@ -66,6 +66,37 @@ section {
 
   .image-description {
     width: 85%;
+  }
+}
+
+@media (min-width: 70rem) {
+  section {
+    margin-top: 2rem;
+    padding-left: 18rem;
+  }
+
+  .image-overlay div {
+    height: 20rem;
+    width: 30rem;
+  }
+
+  .image-description {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 90rem) {
+  section {
+    padding-left: 28rem;
+  }
+
+  .image-overlay div {
+    height: 25rem;
+    width: 35rem;
+  }
+
+  .image-description {
+    max-width: 65%;
   }
 }
 

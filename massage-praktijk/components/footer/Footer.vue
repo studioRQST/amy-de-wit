@@ -212,7 +212,20 @@ a:focus {
     padding-right: 2rem;
 
   }
+}
 
+@media (min-width: 70rem) {
+  .svg-container{
+    display: flex;
+    gap: 25rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .svg-container{
+
+    gap: 30rem;
+  }
 }
 
 

@@ -60,4 +60,14 @@ li {
     margin: 0;
   }
 }
+
+@media only screen and (min-width: 70rem) {
+  span {
+    display: inline;
+  }
+
+  ul {
+    margin-left: 2.1rem;
+  }
+}
 </style>

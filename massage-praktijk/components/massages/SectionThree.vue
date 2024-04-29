@@ -71,9 +71,30 @@ section {
 
 @media (min-width: 70rem) {
   section {
-    margin-top: 3rem;
-    padding-left: 10rem;
+    margin-top: 2rem;
+    padding-left: 8rem;
+  }
+
+  .image-overlay div {
+    height: 20rem;
+    width: 30rem;
+  }
+
+  .image-description {
+    max-width: 48%;
   }
 }
+
+@media (min-width: 90rem) {
+  .image-overlay div {
+    height: 25rem;
+    width: 35rem;
+  }
+
+  .image-description {
+    max-width: 45%;
+  }
+}
+
 
 </style>
