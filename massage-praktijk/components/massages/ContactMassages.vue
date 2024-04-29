@@ -81,7 +81,7 @@ input {
   border: 2px solid var(--secondary);
   font-family: work-sans, sans-serif;
   padding: 1rem;
-  background-color: var(--background-color)
+  background-color: var(--background-color);
 }
 
 textarea {
@@ -92,7 +92,7 @@ textarea {
   border: 2px solid var(--secondary);
   font-family: work-sans, sans-serif;
   padding: 1rem;
-  background-color: var(--background-color)
+  background-color: var(--background-color);
 }
 
 input:focus,
@@ -105,10 +105,11 @@ textarea:focus{
     display: flex;
     flex-direction: row;
     gap: 11.5rem;
+    background-color: red;
   }
 
   .flex-container input {
-    width: 180%;
+    width: 100%;
   }
 
 
