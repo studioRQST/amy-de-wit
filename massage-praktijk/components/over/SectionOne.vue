@@ -117,11 +117,11 @@
     }
 
     .intro-contain img{
-        margin-right: 7rem;
+        margin-right: 10rem;
     }
 
     .image-description{
-        padding: 0 3rem 11rem 13rem;
+        padding: 0 3rem 12rem 16.5rem;
         max-width: 60rem;
     }
 
