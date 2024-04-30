@@ -44,7 +44,7 @@
         font-size: 3rem;
         line-height: 3rem;
         color: var(--secondary);
-        padding: 0 1.5rem;
+        padding: 1.5rem 1.5rem 0 1.5rem;
     }
 
     .text-description{
@@ -54,8 +54,79 @@
         padding: 2rem 1.5rem 3rem 1.5rem;
     }
 
-    @media (min-width: 40rem){
+@media (min-width: 40rem){
+
+        section{
+            padding: 8rem 0 5rem 0;
+        }
+
+        .intro-contain{
+            padding: 0 3rem;
+        }
+
+        h2 {
+            padding: 0 3rem 0 3rem;
+        }
+
+        .text-description{
+            padding: 4rem 3rem 3rem 3rem;
+            max-width: 50rem;
+        }
 
     }
 
+@media (min-width: 70rem){
+
+    .intro-contain img{
+        display: block;
+        width: 2rem;
+        margin-right: 4rem;
+    }
+
+    section{
+        padding: 12rem 0 10rem 0;
+    }
+
+    .intro-contain{
+        padding: 0 4rem;
+        display: flex;
+    }
+
+    h2 {
+        padding: 1.5rem 4rem 0 10rem;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .text-description{
+        padding: 6rem 4rem 3rem 10rem;
+        max-width: 60rem;
+    }
+}
+
+@media (min-width: 90rem){
+
+    .intro-contain img{
+        margin-right: 10rem;
+    }
+
+    section{
+        padding: 14rem 0 10rem 0;
+    }
+
+    .intro-contain{
+        padding: 0 4rem;
+        display: flex;
+    }
+
+    h2 {
+        padding: 1rem 4rem 0 16rem;
+    }
+
+    .text-description{
+        padding: 8rem 4rem 3rem 16rem;
+        max-width: 80rem;
+        gap: 2rem;
+    }
+}
 </style>
