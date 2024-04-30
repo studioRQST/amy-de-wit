@@ -1,6 +1,7 @@
 <template>
   <div>
     <link rel="stylesheet" href="https://use.typekit.net/rtt3tac.css">
+    <PageLoader/>
     <NuxtLayout>
       <NuxtPage/>
         <nuxt-link class="whatsapp-wrapper" href="https://wa.me/610629690" aria-label="Stuur Amy een Whatsapp!">
