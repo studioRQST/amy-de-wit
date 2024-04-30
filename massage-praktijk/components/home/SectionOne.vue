@@ -1,3 +1,28 @@
+<script>
+import { gsap } from 'gsap';
+
+export default {
+  mounted() {
+    // GSAP animation
+    gsap.from(".home-wrapper", {
+      x: -100, // start from left
+      opacity: 0,
+      duration: 1, // animation duration
+      ease: "power2.out" // easing function
+    });
+
+    gsap.from(".image-overlay", {
+      y: -100, // start from top
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+      stagger: 0.5 // stagger the animation of each overlay
+    });
+  }
+}
+</script>
+
+
 <template>
     <section>
         <div class="container">
