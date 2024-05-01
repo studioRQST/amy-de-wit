@@ -14,7 +14,7 @@ export default defineComponent({
     // Define GSAP animation with ScrollTrigger
     gsap.to(".text p", {
       backgroundPositionX: "0%",
-      stagger: 1,
+      duration: 2,
       scrollTrigger: {
         trigger: ".text",
         scrub: 1,
@@ -31,35 +31,60 @@ export default defineComponent({
   <section>
     <div class="container">
       <div class="text">
-        <p>Jouw herstel is mijn missie.</p>
-
-
+        <p>Jouw herstel is <span>mijn missie.</span></p>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+section {
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  display: flex;
+}
+
+text {
+  display: flex;
+}
+
+span {
+  display: block;
+}
+
+.text > p {
+  text-align: left;
+  line-height: 4rem;
+  font-size: 2rem;
+  width: 100vw;
+  background: linear-gradient(
+      to right,
+      #1D5983 50%,
+      #9C866C 10% /* Changed color here */
+  );
+  background-size: 400% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
 
 @media (min-width: 48rem) {
-
-
-}
-
-@media (min-width: 70rem) {
-
-
-}
-
-@media (min-width: 90rem) {
-
-
   section {
-    height: 30vw;
-    width: 100vh;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    height: 30vh;
+    width: 100vw;
+    padding-top: 15rem;
+    padding-bottom: 25rem;
+    padding-left: 0;
+  }
+
+  span {
+    display: inline;
   }
 
   .container {
@@ -70,10 +95,49 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
+  .text > p {
+    text-align: center;
+    line-height: 10rem;
+    font-size: 3rem;
+    width: 100vw;
+    background: linear-gradient(
+        to right,
+        #1D5983 50%,
+        #9C866C 10% /* Changed color here */
+    );
+    background-size: 400% 100%;
+    background-position-x: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 
 
+}
+
+@media (min-width: 70rem) {
+  section {
+    height: 30vh;
+    width: 100vw;
+    padding-top: 15rem;
+    padding-bottom: 25rem;
+  }
+
+  span {
+    display: inline;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .text > p {
     text-align: center;
@@ -82,17 +146,20 @@ export default defineComponent({
     width: 100vw;
     background: linear-gradient(
         to right,
-        rgb(255, 255, 255) 50%,
-        rgb(37, 37, 37) 50%
+        #1D5983 50%,
+        #9C866C 10% /* Changed color here */
     );
     background-size: 400% 100%;
     background-position-x: 100%;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-
-
   }
+
+}
+
+@media (min-width: 90rem) {
+
 
 }
 
