@@ -112,16 +112,12 @@
         padding: 14rem 4rem 5rem 4rem;
     }
 
-    .intro-contain h1{
-        font-size: 9rem;
-    }
-
     .intro-contain img{
-        margin-right: 7rem;
+        margin-right: 10rem;
     }
 
     .image-description{
-        padding: 0 3rem 11rem 13rem;
+        padding: 0 3rem 12rem 16.5rem;
         max-width: 60rem;
     }
 

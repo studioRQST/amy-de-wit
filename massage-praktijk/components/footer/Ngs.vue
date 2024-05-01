@@ -15,13 +15,13 @@
 </template>
 
 <style scoped>
+
 section {
   background-color: var(--secondary);
-  padding-top: 2rem;
-  padding-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 1.5rem;
 }
 
 .flex-container {
@@ -30,12 +30,37 @@ section {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 85%;
+  gap: 2rem;
 }
 
 h2, h3, p {
-  color: white;
-  padding-top: 2rem;
+  color: var(--background-color);
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40rem){
+
+  section {
+    padding: 7rem 3rem;
+  }
+
+  p {
+    max-width: 40rem;
+  }
+}
+
+@media (min-width: 70rem){
+
+  section {
+    padding: 10rem 4rem;
+  }
+
+  p {
+    max-width: 50rem;
+  }
 }
 
 

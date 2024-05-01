@@ -126,7 +126,7 @@
     }
 
     .description{
-        padding: 0 13rem 10rem 13rem;
+        padding: 0 16.5rem 10rem 16.5rem;
     }
 
     .wrapper{
@@ -148,7 +148,11 @@
     }
 
     .description-two{
-        padding: 0rem 3rem 30rem 13rem;
+        padding: 0rem 4rem 30rem 16.5rem;
+    }
+
+    .description-two h3{
+        padding-bottom: 2rem;
     }
 
 }
