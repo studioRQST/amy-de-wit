@@ -5,19 +5,19 @@ export default {
   mounted() {
     // GSAP animation
     gsap.from(".home-wrapper", {
-      x: -100, // start from left
+      x: -100, 
       opacity: 0,
-      duration: 1, // animation duration
-      ease: "power2.out" // easing function
+      duration: 1, 
+      ease: "power2.out" 
     });
 
     gsap.from(".image-overlay", {
-      y: -100, // start from top
+      y: -100,
       opacity: 0,
       duration: 1,
       ease: "power2.out",
       stagger: 0.5,
-      delay: 3 // stagger the animation of each overlay
+      delay: 3 
     });
 
     // Additional animations

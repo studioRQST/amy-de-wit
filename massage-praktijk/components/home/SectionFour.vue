@@ -16,7 +16,7 @@
         <div class="image-description">
             <h3>Het Gezicht achter Massagepraktijk Amy de Wit</h3>
             <h4>Ontdek de Passie en Expertise Achter Amy de Wit</h4>
-            <nuxt-link href="/" aria-label="Link naar pagina over mij">
+            <nuxt-link href="/over-mij" aria-label="Link naar pagina over mij">
                 <button class="primary-button">
                     <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>

@@ -15,6 +15,7 @@
 
 body {
     background-color: var(--background-color);
+    cursor: url('/static/icons/custom-cursor.svg'), auto;
 }
 
 /* HTML */
