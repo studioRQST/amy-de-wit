@@ -92,14 +92,16 @@ export default {
     margin-top: 0.5rem;
   }
 
-  @media (min-width: 40rem){
+  @media (min-width: 70rem){
     
-    .logo-left, .logo-center, .logo-right {
-      width: 3rem;
+    .logo-top, .logo-bottom {
+      width: 12rem;
+      height: auto;
+      opacity: 0;
     }
 
-    .logo-left, .logo-right {
-      margin-top: 2rem;
+    .logo-bottom {
+      margin-top: 0.7rem;
     }
 
   }

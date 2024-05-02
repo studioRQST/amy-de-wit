@@ -16,12 +16,53 @@ export default {
       opacity: 0,
       duration: 1,
       ease: "power2.out",
-      stagger: 0.5 // stagger the animation of each overlay
+      stagger: 0.5,
+      delay: 3 // stagger the animation of each overlay
+    });
+
+    // Additional animations
+    gsap.from(".intro-contain h1", {
+      opacity: 0,
+      x: 100,
+      duration: 1.5,
+      ease: "power2.out",
+      delay: 0.5
+    });
+
+    gsap.from(".intro-contain img", {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      ease: "back.out",
+      delay: 1
+    });
+
+    gsap.from(".wrapper h1", {
+      opacity: 0,
+      y: 50,
+      duration: 1.5,
+      ease: "power2.out",
+      delay: 1.5
+    });
+
+    gsap.from(".intro-contain-text img", {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      ease: "back.out",
+      delay: 2
+    });
+
+    gsap.from(".intro-contain-text h4", {
+      opacity: 0,
+      y: 50,
+      duration: 1.5,
+      ease: "power2.out",
+      delay: 2.5
     });
   }
 }
 </script>
-
 
 <template>
     <section>
