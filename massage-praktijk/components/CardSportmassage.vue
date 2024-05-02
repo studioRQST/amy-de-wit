@@ -9,21 +9,22 @@
         const cardElement = document.querySelector('.card-animation-2');
 
         gsap.from(cardElement, {
-            y: '-10%',
+            y: '-50%',
             opacity: 0,
             ease: 'power3.out',
             scrollTrigger: {
                 trigger: cardElement,
                 start: 'top center',
                 end: 'center center',
-                scrub: true,
+                scrub: 1.5,
             },
         });
     });
 </script>
 
 <template>
-<section class="card-animation-2">
+<section>
+    <div class="card-animation-2">
     <div class="image-overlay">
         <div>
             <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage">
@@ -40,7 +41,8 @@
                 <span class="button-text">Lees meer</span>
             </button>
         </nuxt-link>
-    </div>  
+    </div> 
+    </div>   
 </section>
 </template>
 
