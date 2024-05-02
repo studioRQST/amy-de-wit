@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
     <section>
         <div class="wrapper">
@@ -10,7 +6,7 @@
                 <h2><span>Ervaar</span> mijn massages</h2>
             </div>
             <div class="intro-contain-text">
-                <h4>Laat mij je begeleiden op een reis van herstel en vernieuwing</h4>
+                <p>Laat mij je begeleiden op een reis van herstel en vernieuwing</p>
             </div>
         </div>
         <CardLymfedrainage/>
@@ -41,6 +37,10 @@
 
 .intro-contain-text{
     padding: 0rem 1.5rem 3.5rem 3.5rem;
+}
+
+.intro-contain-text p { 
+    text-transform: uppercase;
 }
 
 @media (min-width: 40rem){

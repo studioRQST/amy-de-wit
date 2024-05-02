@@ -1,5 +1,29 @@
+<script setup lang="ts">
+    import { onMounted } from 'vue';
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    onMounted(() => {
+        const cardElement = document.querySelector('.card-animation');
+
+        gsap.from(cardElement, {
+            x: '-10%',
+            opacity: 0,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: cardElement,
+                start: 'top center',
+                end: 'center center',
+                scrub: true,
+            },
+        });
+    });
+</script>
+
 <template>
-<section class="card-element">
+<section class="card-animation" >
     <div class="image-overlay">
         <div>
             <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
@@ -11,7 +35,7 @@
         <nuxt-link href="/massage/lymfedrainage" aria-label="Link naar pagina lymfedrainage">
             <button class="primary-button">
                 <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+                    <span class="icon arrow"></span>
                 </span>
                 <span class="button-text">Lees meer</span>
             </button>
@@ -19,6 +43,8 @@
     </div>  
 </section>
 </template>
+
+
 
 <style scoped>
 

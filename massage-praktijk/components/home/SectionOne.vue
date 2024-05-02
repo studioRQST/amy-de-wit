@@ -11,7 +11,7 @@ export default {
       ease: "power2.out" 
     });
 
-    gsap.from(".image-overlay", {
+    gsap.from(".home-image-overlay", {
       y: -100,
       opacity: 0,
       duration: 1,
@@ -21,7 +21,7 @@ export default {
     });
 
     // Additional animations
-    gsap.from(".intro-contain h1", {
+    gsap.from(".home-intro-contain h1", {
       opacity: 0,
       x: 100,
       duration: 1.5,
@@ -29,7 +29,7 @@ export default {
       delay: 0.5
     });
 
-    gsap.from(".intro-contain img", {
+    gsap.from(".home-intro-contain img", {
       opacity: 0,
       scale: 0.5,
       duration: 1,
@@ -45,7 +45,7 @@ export default {
       delay: 1.5
     });
 
-    gsap.from(".intro-contain-text img", {
+    gsap.from(".home-intro-contain-text img", {
       opacity: 0,
       scale: 0.5,
       duration: 1,
@@ -53,7 +53,7 @@ export default {
       delay: 2
     });
 
-    gsap.from(".intro-contain-text h4", {
+    gsap.from(".home-intro-contain-text h4", {
       opacity: 0,
       y: 50,
       duration: 1.5,
@@ -68,12 +68,12 @@ export default {
     <section>
         <div class="container">
             <div class="home-wrapper">
-                <div class="intro-contain">
+                <div class="home-intro-contain">
                     <h1>Verlicht<img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo">Herstel<span>&</span></h1>
                 </div>
                 <div class="wrapper">
                     <h1>Vernieuw</h1>
-                    <div class="intro-contain-text">
+                    <div class="home-intro-contain-text">
                         <img src="/static/icons/icon-star-brown.svg" alt="Icoon Ster">
                         <h4>Ontdek de kracht van <span>lymfedrainage</span> en <span>sportmassage</span> voor een optimaal herstel</h4>
                     </div>
@@ -81,12 +81,12 @@ export default {
             </div>
         </div>
         <div class="image-wrapper">
-            <div class="image-overlay">
+            <div class="home-image-overlay">
                 <div>
                     <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
                 </div>
             </div>
-            <div class="image-overlay">
+            <div class="home-image-overlay">
                 <div>
                     <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
                 </div>
@@ -97,7 +97,7 @@ export default {
 
 <style scoped>
 
-.image-overlay:nth-child(2) {
+.home-image-overlay:nth-child(2) {
     display: none;
 }
 
@@ -118,24 +118,24 @@ export default {
     align-items: center;
 }
 
-.intro-contain{
+.home-intro-contain{
     display: flex;
     flex-wrap: wrap;
     padding: 8rem 1.5rem 0 1.5rem;
 }
 
-.intro-contain h1{
+.home-intro-contain h1{
     font-size: 6rem;
     line-height: 6rem;
 }
 
-.intro-contain span{
+.home-intro-contain span{
     color: var(--secondary);
     font-family: bebas-neue-pro, sans-serif;
     margin: 0 1.5rem;
 }
 
-.intro-contain img{
+.home-intro-contain img{
     margin: 0 0 1rem 1rem;
 }
 
@@ -152,14 +152,14 @@ export default {
     padding: 0 0 3rem 0;
 }
 
-.intro-contain-text{
+.home-intro-contain-text{
     padding: 0rem 1.5rem 3.5rem 1.5rem;
     display: flex;
     gap: 2rem;
     max-width: 40rem;
 }
 
-.intro-contain-text img {
+.home-intro-contain-text img {
     animation: rotateStar 6s linear infinite; 
 }
 
@@ -172,18 +172,18 @@ export default {
     }
 }
 
-.intro-contain-text span{
+.home-intro-contain-text span{
     font-weight: 600;
 }
 
-.image-overlay div{
+.home-image-overlay div{
     overflow: clip;
     width: 100%;
     height: 18rem;
     background-color: var(--secondary);
 }
 
-.image-overlay img{
+.home-image-overlay img{
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -202,11 +202,11 @@ export default {
         align-items: center;
     }
 
-    .intro-contain-text{
+    .home-intro-contain-text{
         margin-top: 1rem;
     }
 
-    .intro-contain img{
+    .home-intro-contain img{
         margin: 0 1.5rem 1rem 1rem;
     }
 
@@ -216,17 +216,17 @@ export default {
         gap: 2rem;
     }
 
-    .image-overlay div{
+    .home-image-overlay div{
         width: 25rem;
         height: 18rem;
     }
 
-    .image-overlay:nth-child(2){
+    .home-image-overlay:nth-child(2){
         display: block;
         margin-top: -3rem
     }
 
-    .image-overlay:nth-child(2) div{
+    .home-image-overlay:nth-child(2) div{
         width: 15rem;
         height: 18rem;
     }
@@ -239,7 +239,7 @@ export default {
         max-width: 58.5rem; 
     }
 
-    .intro-contain h1{
+    .home-intro-contain h1{
         font-size: 8rem;
         line-height: 8rem;
     }
@@ -249,18 +249,18 @@ export default {
         line-height: 8rem;
     }
 
-    .image-overlay div{
+    .home-image-overlay div{
         width: 40rem;
         height: 25rem;
     }
 
-    .image-overlay:nth-child(2){
+    .home-image-overlay:nth-child(2){
         display: block;
         padding-right: 3rem;
         margin-top: -3rem
     }
 
-    .image-overlay:nth-child(2) div{
+    .home-image-overlay:nth-child(2) div{
         width: 15rem;
         height: 20rem;
     }
@@ -277,12 +277,12 @@ export default {
         max-width: 64rem; 
     }
 
-    .intro-contain h1{
+    .home-intro-contain h1{
         font-size: 9rem;
         line-height: 9rem;
     }
 
-    .wrapper h1{
+    .home-wrapper h1{
         font-size: 9rem;
         line-height: 9rem;
     }
@@ -292,11 +292,11 @@ export default {
         gap: 5rem;
     }
 
-    .image-overlay:nth-child(2){
+    .home-image-overlay:nth-child(2){
         margin-top: -4rem
     }
 
-    .image-overlay:nth-child(2) div{
+    .home-image-overlay:nth-child(2) div{
         width: 20rem;
         height: 25rem;
     }
