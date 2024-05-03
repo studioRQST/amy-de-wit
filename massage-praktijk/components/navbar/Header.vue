@@ -223,7 +223,7 @@ input[type="checkbox"] {
 }
 
 .menu__item-link:hover {
-	opacity: 0;
+	color: var(--secondary);
 }
 
 .menu__item-img {
