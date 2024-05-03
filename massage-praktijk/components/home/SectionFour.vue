@@ -30,6 +30,11 @@
 
 <style scoped>
 
+section{
+    padding: 2rem 0;
+    background-color: var(--background-color);
+}
+
 .intro-contain{
     display: flex;
     gap: 1rem;
@@ -89,6 +94,11 @@
 }
 
 @media (min-width: 70rem){
+
+    section{
+        padding: 5rem 0;
+        background-color: var(--background-color);
+    }
 
     .intro-contain{
         padding: 5rem 4rem 5rem 4rem;

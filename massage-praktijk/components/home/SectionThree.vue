@@ -37,8 +37,6 @@ export default defineComponent({
 });
 </script>
 
-
-
 <template>
   <section>
     <div class="container">
@@ -53,6 +51,7 @@ export default defineComponent({
 
 section {
   padding: 10rem 2rem;
+  height: 100vh;
 }
 
 .container {
