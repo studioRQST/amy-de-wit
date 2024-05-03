@@ -61,18 +61,18 @@ section {
 
 @media only screen and (min-width: 48rem) {
   .card-element {
-    margin-left: 18rem;
+    margin-left: 5rem;
   }
 
   .image-description {
-    width: 85%;
+    width: 55%;
   }
 }
 
 @media (min-width: 70rem) {
   section {
     margin-top: 2rem;
-    padding-left: 18rem;
+    padding-left: 8rem;
   }
 
   .image-overlay div {
@@ -81,23 +81,20 @@ section {
   }
 
   .image-description {
-    max-width: 70%;
+    max-width: 48%;
   }
 }
 
 @media (min-width: 90rem) {
-  section {
-    padding-left: 28rem;
-  }
-
   .image-overlay div {
     height: 25rem;
     width: 35rem;
   }
 
   .image-description {
-    max-width: 65%;
+    max-width: 45%;
   }
 }
+
 
 </style>
