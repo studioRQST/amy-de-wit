@@ -15,8 +15,13 @@
 
 body {
     background-color: var(--background-color);
+
+}
+
+img:hover, a:hover, button:hover {
     cursor: url('/static/icons/custom-cursor.svg'), auto;
 }
+
 
 /* HTML */
 
