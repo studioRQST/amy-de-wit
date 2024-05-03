@@ -25,7 +25,7 @@
        <div class="menu">
         <div class="menu__item">
           <nuxt-link href="/" class="menu__item-link">Home</nuxt-link>
-          <img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+          <img class="menu__item-img" id="left" src="/static/images/lymfedrainage.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Home</span>
@@ -37,7 +37,7 @@
         </div>
         <div class="menu__item">
           <nuxt-link href="/massages" class="menu__item-link">Massages</nuxt-link>
-          <img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+          <img class="menu__item-img" id="right"  src="/static/images/lymfedrainage-2.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Massages</span>
@@ -49,7 +49,7 @@
         </div>
         <div class="menu__item">
           <nuxt-link href="/over-mij" class="menu__item-link">Over mij</nuxt-link>
-          <img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+          <img class="menu__item-img" id="left"  src="/static/images/lymfedrainage.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Over mij</span>
@@ -59,9 +59,9 @@
             </div>
           </div>
         </div>
-        <div class="menu__item">
-          <nuxt-link href="/contact" class="menu__item-link">Contact</nuxt-link>
-          <img class="menu__item-img" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+        <div class="menu__item ">
+          <nuxt-link href="/contact" class="menu__item-link ">Contact</nuxt-link>
+          <img class="menu__item-img"  id="right" src="/static/images/lymfedrainage-2.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Contact</span>
@@ -209,6 +209,7 @@ input[type="checkbox"] {
 	--move-final: calc(-50% + var(--offset));
 	counter-reset: menu;
   padding: 20vh 0;
+
 }
 
 .menu__item {
@@ -234,13 +235,23 @@ input[type="checkbox"] {
 	opacity: 0;
 	left: 85vw;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+
 }
 
-.menu__item-link:hover + .menu__item-img {
+.menu__item-link:hover + #right {
 	opacity: 1;
-	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+	transform: translate3d(calc(-100% - 10vw),-30%,0) rotate3d(0,0,1,4deg);
 	transition: all 0.4s;
 }
+
+.menu__item-link:hover + #left {
+  opacity: 1;
+  transform: translate3d(-150%, -30%, 0) rotate3d(0, 0, 1, -4deg);
+  transition: all 0.4s;
+}
+
+
+
 
 .marquee {
 	position: absolute;
@@ -385,6 +396,8 @@ input[type="checkbox"] {
   line-height: 5.5rem;
 }
 
+
+
 .marquee span {
   font-size: 5.5rem;
   line-height: 5.5rem;
@@ -410,7 +423,16 @@ input[type="checkbox"] {
 
 @media (min-width: 70rem) {
 
-.menu-contact-button{
+  .menu__item:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse the direction for even menu items */
+  }
+
+  .menu__item:nth-child(odd) {
+    flex-direction: row; /* Keep the direction as default for odd menu items */
+  }
+
+
+  .menu-contact-button{
   display: block;
   margin: 2rem 15rem 0.5rem 0;
 }
@@ -475,7 +497,11 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
+
+
 }
 
 </style>
 
+<script setup lang="ts">
+</script>
