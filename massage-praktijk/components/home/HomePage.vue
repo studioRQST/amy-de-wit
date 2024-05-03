@@ -21,7 +21,7 @@ export default {
         const distanceToCenter = top - screenHeight / 2 + section.offsetHeight / 2;
 
         // Controleer of de sectie vóór of na de derde sectie ligt
-        const isAfterThirdSection = Array.from(sections).indexOf(section) >= 3;
+        const isAfterThirdSection = Array.from(sections).indexOf(section) >= 1;
 
         // Stop de animatie als de sectie na de derde sectie ligt
         if (isAfterThirdSection) return;
@@ -70,8 +70,6 @@ section{
 .section-two {
   background-color: var(--background-color);
 }
-
-
 
 </style>
 

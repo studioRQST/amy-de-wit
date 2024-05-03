@@ -228,15 +228,26 @@ a:focus {
     justify-content: space-between;
   }
 
-  .svg-container svg {
+ .svg-container svg {
     width: 40rem;
     margin: 0;
     margin-left: -20rem;
+    animation: fade-bounce-animation 3s infinite; 
   }
 
   .svg-container :nth-child(2) {
     width: 40rem;
     margin-right: -20rem;
+    animation: fade-bounce-animation 3s infinite; 
+  }
+
+  @keyframes fade-bounce-animation {
+      0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
   }
 
   .footer-part-two {

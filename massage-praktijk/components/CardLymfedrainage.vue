@@ -9,7 +9,7 @@
         const cardElement = document.querySelector('.card-animation');
 
         gsap.from(cardElement, {
-            y: '100',
+            x: '-100%',
             opacity: 0,
             ease: 'power3.out',
             scrollTrigger: {
@@ -83,17 +83,13 @@ section{
 
 @media (min-width: 40rem){
 
-    section{
-        padding: 4rem 0 0 5rem;
+    .image-description{
+        max-width: 22rem;
     }
     
 }
 
 @media (min-width: 70rem){
-
-    section{
-        padding: 10rem 0 0 10rem;
-    }
 
     .image-overlay div{
         width: 25rem;
@@ -108,8 +104,9 @@ section{
 
 @media (min-width: 90rem){
 
-    section{
-        padding: 10rem 0 0 15rem;
+    .image-overlay div{
+        width: 30rem;
+        height: 25rem;
     }
 
 }

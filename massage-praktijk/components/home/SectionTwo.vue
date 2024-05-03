@@ -9,13 +9,26 @@
                 <p>Laat mij je begeleiden op een reis van herstel en vernieuwing</p>
             </div>
         </div>
-        <CardLymfedrainage/>
-        <CardSportmassage/>
-        <CardVoetreflex/>
+        <div class="flex-contain">
+            <div>
+                <CardLymfedrainage/>
+            </div>
+            <div>
+                <CardSportmassage/>
+            </div>
+            <div>
+                <CardVoetreflex/>
+            </div>
+        </div>
     </section>
 </template>
 
 <style scoped>
+
+section{
+    overflow: clip;
+    width: 100%;
+}
 
 .intro-contain{
     display: flex;
@@ -61,6 +74,15 @@
     .intro-contain-text{
         padding: 0 0 0 3rem;
     }
+
+    .flex-contain{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 3rem;
+        gap: 5rem;
+    }
 }
 
 @media (min-width: 70rem){
@@ -88,6 +110,10 @@
         padding: 0 0 1rem 0;
         max-width: 30rem;
     }
+
+    .flex-contain{
+        padding: 10rem 10rem 0 10rem;
+    }
 }
 
 @media (min-width: 90rem){
@@ -96,6 +122,10 @@
         display: flex;
         align-items: flex-end;
         padding: 15rem 4rem 4rem 4rem;
+    }
+
+    .flex-contain{
+        padding: 10rem 10rem 0 10rem;
     }
 }
 
