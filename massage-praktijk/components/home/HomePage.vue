@@ -56,57 +56,22 @@ export default {
 
 <style scoped>
 .slide-container {
-  height: 500vh; 
+  height: auto;
+}
+
+section{
+  height: auto;
 }
 
 .section-one {
   background-color: var(--background-color);
-  height: 100vh;
 }
 
 .section-two {
   background-color: var(--background-color);
-  height: auto
 }
 
-.section-three {
-  background-color: var(--background-color);
-  height: 50vh;
-}
 
-.section-four {
-  background-color: var(--background-color);
-  height: 100vh;
-}
-
-@media (min-width: 40rem){
-
-  .slide-container {
-    height: 600vh; 
-  }
-
-  .section-three {
-  background-color: var(--background-color);
-  height: 100vh;
-}
-
-}
-
-@media (min-width: 70rem){
-
-  .slide-container {
-    height: 650vh; 
-  }
-
-}
-
-@media (min-width: 90rem){
-
-  .slide-container {
-    height: 700vh; 
-  }
-
-}
 
 </style>
 
