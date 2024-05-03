@@ -18,6 +18,23 @@
 
 <style>
 
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.page-enter-to,
+.page-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* WhatsApp-toepassing */
 .whatsapp-wrapper {
   width: 4rem;
