@@ -262,11 +262,7 @@ input[type="checkbox"] {
 	transition: opacity 0.1s;
 }
 
-.menu__item-link:hover ~ .marquee .marquee__inner {
-	animation-play-state: running;
-	opacity: 1;
-	transition-duration: 0.4s;
-}
+
 
 .marquee span {
 	text-align: center;
@@ -496,6 +492,12 @@ input[type="checkbox"] {
     opacity: 1;
     transform: translate3d(-150%, -30%, 0) rotate3d(0, 0, 1, -4deg);
     transition: all 0.4s;
+  }
+
+  .menu__item-link:hover ~ .marquee .marquee__inner {
+    animation-play-state: running;
+    opacity: 1;
+    transition-duration: 0.4s;
   }
 
 
