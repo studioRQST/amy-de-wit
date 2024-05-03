@@ -9,14 +9,16 @@
         const cardElement = document.querySelector('.card-animation');
 
         gsap.from(cardElement, {
+            y: '100',
             opacity: 0,
             ease: 'power3.out',
             scrollTrigger: {
+                duration: 1,
                 trigger: cardElement,
-                start: 'top center',
-                end: 'center center',
-                scrub: 1.5,
-            },
+                start: 'top 100%',
+                end: 'bottom 10%',
+                scrub: true,
+                },
         });
     });
 </script>
