@@ -1,5 +1,24 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+let imageElement = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(imageElement.value, {
+    scrollTrigger: {
+      trigger: imageElement.value,
+      start: 'top 100%',
+      end: 'bottom bottom',
+      scrub: 1.5,
+    },
+    width: '100vw',
+    ease: 'power1.inOut',
+  });
+});
 </script>
 
 <template>
@@ -14,7 +33,7 @@
             <p>Mijn missie is om elke klant een op maat gemaakte ervaring te bieden, waarbij ik de kracht van massage combineer met een diepgaande kennis van het menselijk lichaam om een gevoel van vernieuwing en vitaliteit te bevorderen.</p>
         </div>
         <div class="image-overlay">
-            <div>
+            <div ref="imageElement">
                 <img src="/static/images/dit-ben-ik.avif" alt="Afbeelding Lymfedrainage">
             </div>
         </div>
@@ -43,9 +62,14 @@
         padding: 0 1.5rem 3rem 1.5rem;
     }
 
+    .image-overlay{
+        display: flex;
+        justify-content: center;
+    }
+
     .image-overlay div{
-        overflow: clip;
-        width: 100%;
+        overflow: hidden;
+        width: 80%;
         height: 18rem;
         background-color: var(--secondary);
     }

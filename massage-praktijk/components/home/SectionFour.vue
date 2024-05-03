@@ -11,11 +11,11 @@ onMounted(() => {
   gsap.to(imageElement.value, {
     scrollTrigger: {
       trigger: imageElement.value,
-      start: 'top 100%',
+      start: 'top 70%',
       end: 'bottom bottom',
       scrub: 1.5,
     },
-    scale: 1.1,
+    width: '100vw',
     ease: 'power1.inOut',
   });
 });
@@ -28,8 +28,8 @@ onMounted(() => {
             <h2><span>Ontmoet</span> Amy</h2>
         </div>
         <div class="image-overlay">
-            <div ref="overlayDiv">
-                <img ref="imageElement" src="/static/images/dit-ben-ik.avif" alt="Afbeelding Lymfedrainage">
+            <div ref="imageElement">
+                <img src="/static/images/dit-ben-ik.avif" alt="Afbeelding Lymfedrainage">
             </div>
         </div>
         <div class="image-description">
@@ -71,8 +71,8 @@ section{
 }
 
 .image-overlay div{
-    overflow: clip;
-    width: 100%;
+    overflow: hidden;
+    width: 80%;
     height: 18rem;
     background-color: var(--secondary);
 }
