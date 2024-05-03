@@ -1,5 +1,24 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+let imageElement = ref<HTMLElement | null>(null); // Ref voor de afbeelding binnen de overlay-div
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(imageElement.value, {
+    scrollTrigger: {
+      trigger: imageElement.value,
+      start: 'top 100%',
+      end: 'bottom bottom',
+      scrub: 1.5,
+    },
+    scale: 1.2, // Vergroot de afbeelding met 20%
+    ease: 'power1.inOut',
+  });
+});
 </script>
 
 <template>
@@ -9,8 +28,8 @@
             <h2><span>Ontmoet</span> Amy</h2>
         </div>
         <div class="image-overlay">
-            <div>
-                <img src="/static/images/dit-ben-ik.avif" alt="Afbeelding Lymfedrainage">
+            <div ref="overlayDiv">
+                <img ref="imageElement" src="/static/images/dit-ben-ik.avif" alt="Afbeelding Lymfedrainage">
             </div>
         </div>
         <div class="image-description">
@@ -44,6 +63,11 @@ section{
 .intro-contain span{
     font-family: bebas-neue-pro, sans-serif;
     color: var(--secondary);
+}
+
+.image-overlay{
+    display: flex;
+    justify-content: center;
 }
 
 .image-overlay div{
