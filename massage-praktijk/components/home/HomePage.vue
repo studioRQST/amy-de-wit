@@ -27,7 +27,7 @@ export default {
         if (isAfterThirdSection) return;
 
         // Bereken de schaal op basis van de afstand tot het midden van het scherm
-        const scale = 1 - Math.abs(distanceToCenter) / screenHeight * 0.6; // Minder dramatische schaalverandering
+        const scale = 1 - Math.abs(distanceToCenter) / screenHeight * 0.2; // Minder dramatische schaalverandering
 
         // Pas de transformatie toe op de sectie met GSAP
         gsap.to(section, { scale: scale, duration: 1 }); // Vertraag de animatie naar 1 seconde
@@ -56,11 +56,7 @@ export default {
 
 <style scoped>
 .slide-container {
-  height: 500vh; 
-}
-
-.section {
-  height: 100vh;
+  height: 550vh; 
 }
 
 .section-one {
@@ -71,6 +67,16 @@ export default {
 .section-two {
   background-color: var(--background-color);
   height: auto;
+}
+
+.section-three {
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+.section-four {
+  background-color: var(--background-color);
+  height: 100vh;
 }
 
 </style>

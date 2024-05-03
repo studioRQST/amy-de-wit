@@ -9,7 +9,7 @@
         const cardElement = document.querySelector('.card-animation-2');
 
         gsap.from(cardElement, {
-            y: '50%',
+            x: '50%',
             opacity: 0,
             ease: 'power3.out',
             scrollTrigger: {
