@@ -7,6 +7,7 @@
   <MassagesSectionTwo/>
   <MassagesSectionThree/>
   <MassagesSectionFour/>
+  <MassagesSectionFive/>
 </template>
 
 <style scoped>
