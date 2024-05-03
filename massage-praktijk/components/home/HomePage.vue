@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 .slide-container {
-  height: 550vh; 
+  height: 500vh; 
 }
 
 .section-one {
@@ -66,17 +66,46 @@ export default {
 
 .section-two {
   background-color: var(--background-color);
-  height: auto;
+  height: auto
 }
 
 .section-three {
   background-color: var(--background-color);
-  height: 100vh;
+  height: 50vh;
 }
 
 .section-four {
   background-color: var(--background-color);
   height: 100vh;
+}
+
+@media (min-width: 40rem){
+
+  .slide-container {
+    height: 600vh; 
+  }
+
+  .section-three {
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+}
+
+@media (min-width: 70rem){
+
+  .slide-container {
+    height: 650vh; 
+  }
+
+}
+
+@media (min-width: 90rem){
+
+  .slide-container {
+    height: 700vh; 
+  }
+
 }
 
 </style>

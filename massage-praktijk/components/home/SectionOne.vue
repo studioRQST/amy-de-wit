@@ -24,7 +24,7 @@ export default {
     gsap.from(".home-intro-contain h1", {
       opacity: 0,
       x: 100,
-      duration: 1.5,
+      duration: 1,
       ease: "power2.out",
       delay: 0.5
     });
@@ -40,7 +40,7 @@ export default {
     gsap.from(".wrapper h1", {
       opacity: 0,
       y: 50,
-      duration: 1.5,
+      duration: 1,
       ease: "power2.out",
       delay: 1.5
     });
@@ -56,7 +56,7 @@ export default {
     gsap.from(".home-intro-contain-text h4", {
       opacity: 0,
       y: 50,
-      duration: 1.5,
+      duration: 1,
       ease: "power2.out",
       delay: 2.5
     });

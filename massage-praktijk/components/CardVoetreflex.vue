@@ -6,7 +6,7 @@
     gsap.registerPlugin(ScrollTrigger);
 
     onMounted(() => {
-        const cardElement = document.querySelector('.card-animation');
+        const cardElement = document.querySelector('.card-animation-3');
 
         gsap.from(cardElement, {
             y: '-10%',
@@ -24,29 +24,27 @@
 
 <template>
 <section>
-    <div class="card-animation">
+    <div class="card-animation-3">
     <div class="image-overlay">
         <div>
-            <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
+            <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage">
         </div>
     </div>
     <div class="image-description">
-        <h3>Lymfedrainage</h3>
-        <h4>Ontdek de Zachte Kracht van Lymfedrainage</h4>
-        <nuxt-link href="/massage/lymfedrainage" aria-label="Link naar pagina lymfedrainage">
+        <h3>Voetreflexmassage</h3>
+        <h4>Verken de genezende kracht van Voetreflexpunten</h4>
+        <nuxt-link href="/massage/voetreflex" aria-label="Link naar pagina voetreflexmassage">
             <button class="primary-button">
                 <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
+                <span class="icon arrow"></span>
                 </span>
                 <span class="button-text">Lees meer</span>
             </button>
         </nuxt-link>
     </div> 
-    </div> 
+    </div>   
 </section>
 </template>
-
-
 
 <style scoped>
 
@@ -83,15 +81,14 @@ section{
 @media (min-width: 40rem){
 
     section{
-        padding: 4rem 0 0 5rem;
+        padding: 8rem 0 0 5rem;
     }
-    
 }
 
 @media (min-width: 70rem){
 
     section{
-        padding: 10rem 0 0 10rem;
+        padding: 6rem 0 0 10rem;
     }
 
     .image-overlay div{
@@ -108,9 +105,11 @@ section{
 @media (min-width: 90rem){
 
     section{
-        padding: 10rem 0 0 15rem;
+        padding: 0 0 0 15rem;
     }
 
 }
+
+
 
 </style>

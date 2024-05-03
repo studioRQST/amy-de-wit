@@ -11,6 +11,7 @@
         </div>
         <CardLymfedrainage/>
         <CardSportmassage/>
+        <CardVoetreflex/>
     </section>
 </template>
 
