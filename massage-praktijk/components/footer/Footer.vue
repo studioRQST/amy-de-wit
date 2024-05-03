@@ -8,7 +8,7 @@
     <!--    PART ONE   -->
     <section class="footer-part-one">
       <div class="flex-container">
-        <h2>Klaar voor herstel?</h2>
+        <h2 class="text-animation">Klaar voor herstel?</h2>
 
         <p>Heb je vragen, wil je meer informatie over mijn massages of wil je een afspraak maken? Aarzel niet om contact
           met
@@ -103,6 +103,23 @@
 .flex-container h2,
 .flex-container p {
   color: var(--background-color);
+}
+
+.text-animation {
+  animation: bounce-animation 3s infinite;
+}
+
+@keyframes bounce-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.10);
+  }
+  100% {
+    transform: scale(1);
+  }
+
 }
 
 .flex-container {
@@ -232,22 +249,11 @@ a:focus {
     width: 40rem;
     margin: 0;
     margin-left: -20rem;
-    animation: fade-bounce-animation 3s infinite; 
   }
 
   .svg-container :nth-child(2) {
     width: 40rem;
     margin-right: -20rem;
-    animation: fade-bounce-animation 3s infinite; 
-  }
-
-  @keyframes fade-bounce-animation {
-      0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
   }
 
   .footer-part-two {

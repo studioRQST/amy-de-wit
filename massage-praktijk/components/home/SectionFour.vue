@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-let imageElement = ref<HTMLElement | null>(null); // Ref voor de afbeelding binnen de overlay-div
+let imageElement = ref<HTMLElement | null>(null);
 
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
@@ -15,7 +15,7 @@ onMounted(() => {
       end: 'bottom bottom',
       scrub: 1.5,
     },
-    scale: 1.2, // Vergroot de afbeelding met 20%
+    scale: 1.1,
     ease: 'power1.inOut',
   });
 });

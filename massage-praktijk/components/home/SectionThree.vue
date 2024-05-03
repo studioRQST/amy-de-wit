@@ -8,7 +8,7 @@ export default defineComponent({
     gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.defaults({
-      scroller: window, // Set the scroller to window
+      scroller: window,
     });
 
     // Define GSAP animation with ScrollTrigger
@@ -77,7 +77,6 @@ section {
   font-size: 4rem;
   line-height: 4rem;
 }
-
 
 @media (min-width: 40rem) {
   section {
