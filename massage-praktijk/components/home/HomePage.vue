@@ -75,8 +75,7 @@ export default {
 }
 
 .section-four {
-  background-color: var(--background-color);
-  height: 100vh;
+  height: auto
 }
 
 @media (min-width: 40rem){
