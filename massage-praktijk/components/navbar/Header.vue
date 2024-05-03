@@ -238,17 +238,6 @@ input[type="checkbox"] {
 
 }
 
-.menu__item-link:hover + #right {
-	opacity: 1;
-	transform: translate3d(calc(-100% - 10vw),-30%,0) rotate3d(0,0,1,4deg);
-	transition: all 0.4s;
-}
-
-.menu__item-link:hover + #left {
-  opacity: 1;
-  transform: translate3d(-150%, -30%, 0) rotate3d(0, 0, 1, -4deg);
-  transition: all 0.4s;
-}
 
 
 
@@ -496,6 +485,19 @@ input[type="checkbox"] {
   right: 5rem;
   flex-direction: column;
 }
+
+  .menu__item-link:hover + #right {
+    opacity: 1;
+    transform: translate3d(calc(-100% - 10vw),-30%,0) rotate3d(0,0,1,4deg);
+    transition: all 0.4s;
+  }
+
+  .menu__item-link:hover + #left {
+    opacity: 1;
+    transform: translate3d(-150%, -30%, 0) rotate3d(0, 0, 1, -4deg);
+    transition: all 0.4s;
+  }
+
 
 
 
