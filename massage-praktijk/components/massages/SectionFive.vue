@@ -60,7 +60,7 @@ section {
   margin: 2rem 0;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 40rem) {
 
   .card-element {
     margin-left: 5rem;
@@ -70,7 +70,7 @@ section {
 @media (min-width: 70rem) {
   section {
     margin-top: 2rem;
-    padding-left: 8rem;
+    padding-left: 10rem;
   }
 
   .image-overlay div {
@@ -86,7 +86,7 @@ section {
 @media (min-width: 90rem) {
 
   section {
-    padding: 1.5rem 1.5rem 10rem 1.5rem;
+    padding: 1.5rem 1.5rem 10rem 10rem;
   }
 
   .image-overlay div {

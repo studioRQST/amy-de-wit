@@ -60,7 +60,7 @@ section {
   margin: 2rem 0;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 40rem) {
   .card-element {
     margin-left: 18rem;
   }

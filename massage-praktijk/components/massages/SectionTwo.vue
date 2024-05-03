@@ -16,6 +16,7 @@
 </template>
 
 <style scoped>
+
 .intro-contain{
   display: flex;
   gap: 1rem;
@@ -40,13 +41,18 @@
   font-weight: bold;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 40rem) {
+
+  section {
+    margin-left: 1rem;
+  }
+
   h2, h4 {
     margin-left: 1rem;
   }
 
   h4 {
-    width: 60%;
+    max-width: 30rem;
   }
 }
 
@@ -75,8 +81,6 @@
   .intro-contain {
     margin-left: 2rem;
   }
-
-
 }
 
 </style>

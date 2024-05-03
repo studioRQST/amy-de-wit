@@ -18,7 +18,6 @@
           en
           welzijn te bevorderen.</p>
       </div>
-
       <div class="image-overlay">
         <div>
           <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
@@ -29,129 +28,125 @@
 </template>
 
 <style scoped>
-section {
-  margin-top: 8rem;
-}
 
-h3, p {
-  margin-top: 2rem;
-}
-
-.flex-container, .flex-wrapper-intro {
-  padding: 0 1.5rem;
-}
-
-.flex-wrapper-intro p {
-  margin-bottom: 3rem;
-}
-
-.flex-container img {
-  display: none;
-}
-
-span {
-  display: block;
-  font-family: bebas-neue-pro, sans-serif;
-}
-
-.span-brown {
-  color: var(--secondary);
-}
-
-.image-overlay div {
-  overflow: clip;
-  width: 100%;
-  height: 18rem;
-  background-color: var(--secondary);
-  margin-top: 2rem;
-}
-
-.image-overlay img {
-  object-fit: cover;
-  width: 100%;
-  height: 130%;
-  opacity: 0.8;
-}
-
-
-@media only screen and (min-width: 48rem) {
-  h1 {
-    margin-left: 1.5rem;
-    font-size: 6rem;
-    line-height: 6rem;
+  section {
+    padding: 8rem 0 2rem 0;
   }
 
-  .flex-container img {
-    display: inline;
-    margin-bottom: 6rem;
+  h3, p {
+    margin-top: 2rem;
   }
 
-  .flex-wrapper {
-    display: flex;
-    flex-direction: row;
-
-  }
-
-  .flex-container-intro {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-left: 2.5rem;
-
+  .flex-container, .flex-wrapper-intro {
+    padding: 0 1.5rem;
   }
 
   .flex-wrapper-intro p {
-    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .flex-container img {
+    display: none;
+  }
+
+  span {
+    display: block;
+    font-family: bebas-neue-pro, sans-serif;
+  }
+
+  .span-brown {
+    color: var(--secondary);
   }
 
   .image-overlay div {
     overflow: clip;
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    margin-left: -15rem;
+    width: 100%;
+    height: 18rem;
+    background-color: var(--secondary);
+    margin-top: 2rem;
+  }
 
+  .image-overlay img {
+    object-fit: cover;
+    width: 100%;
+    height: 130%;
+    opacity: 0.8;
   }
 
 
-}
+  @media only screen and (min-width: 40rem) {
 
-@media (min-width: 70rem) {
-  section {
-    margin-left: 3rem;
+    h1 {
+      padding: 2rem 3rem 2rem 3rem;
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+
+    .flex-container img {
+      display: inline;
+      margin: 0 0 6rem 1rem
+    }
+
+    .flex-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-container-intro {
+      display: flex;
+      flex-direction: row;
+      padding-left: 5rem;
+      gap: 3rem;
+    }
+
+    .image-overlay div {
+      width: 15rem;
+      height: 15rem;
+    }
   }
 
-  h1 {
-    margin-left: 6rem;
+  @media (min-width: 70rem) {
+
+    h1 {
+      padding: 4rem 3rem 4rem 3rem;
+      font-size: 8rem;
+      line-height: 8rem;
+    }
+
+    .flex-container img {
+      width: 2rem;
+      margin: 0 0 8rem 3rem
+    }
+
+    .flex-container-intro {
+      padding-left: 8rem;
+      gap: 10rem;
+    }
+
+    .image-overlay div {
+      width: 25rem;
+      height: 25rem;
+    }
   }
 
-  .flex-wrapper img {
-    width: 1.5rem;
-  }
+  @media (min-width: 90rem) {
+    
+    h1 {
+      padding: 6rem 3rem 4rem 9rem;
+      font-size: 9rem;
+      line-height: 9rem;
+    }
 
-  .flex-wrapper-intro {
-    margin-left: 5.5rem;
-  }
+    .flex-container-intro {
+      padding-left: 14rem;
+      gap: 20rem;
+    }
 
-  .flex-wrapper-intro p {
-    width: 50%;
+    .image-overlay div {
+      margin-top: -5rem;
+      width: 35rem;
+      height: 30rem;
+    }
   }
-
-  .image-overlay div {
-    margin-left: -20rem;
-    width: 20rem;
-    height: 20rem;
-    margin-top: -2rem;
-  }
-}
-
-@media (min-width: 90rem) {
-  .image-overlay div {
-    margin-left: -25rem;
-    width: 25rem;
-    height: 25rem;
-    margin-top: -5rem;
-  }
-}
 
 </style>
