@@ -5,7 +5,8 @@
 <template>
   <NavbarHeader/>
   <MassagesVoetreflexmassage/>
-  <MassagesContactMassages/>
+  <MassagesContactMassages/>\
+  <Footer/>
 </template>
 
 <style scoped>
