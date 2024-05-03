@@ -28,10 +28,10 @@
           <img class="menu__item-img" id="left" src="/static/images/lymfedrainage.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
-              <span>Home</span>
-              <span>Home</span>
-              <span>Home</span>
-              <span>Home</span>
+              <span>Home</span> <NavbarIconNavLinks/>
+              <span>Home</span> <NavbarIconNavLinks/>
+              <span>Home</span> <NavbarIconNavLinks/>
+              <span>Home</span> <NavbarIconNavLinks/>
            </div>
          </div>
         </div>
@@ -40,10 +40,10 @@
           <img class="menu__item-img" id="right"  src="/static/images/lymfedrainage-2.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
-              <span>Massages</span>
-              <span>Massages</span>
-              <span>Massages</span>
-              <span>Massages</span>
+              <span>Massages</span> <NavbarIconNavLinks/>
+              <span>Massages</span> <NavbarIconNavLinks/>
+              <span>Massages</span> <NavbarIconNavLinks/>
+              <span>Massages</span> <NavbarIconNavLinks/>
             </div>
           </div>
         </div>
@@ -52,22 +52,22 @@
           <img class="menu__item-img" id="left"  src="/static/images/lymfedrainage.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
-              <span>Over mij</span>
-              <span>Over mij</span>
-              <span>Over mij</span>
-              <span>Over mij</span>
+              <span>Over mij</span> <NavbarIconNavLinks/>
+              <span>Over mij</span> <NavbarIconNavLinks/>
+              <span>Over mij</span> <NavbarIconNavLinks/>
+              <span>Over mij</span> <NavbarIconNavLinks/>
             </div>
           </div>
         </div>
         <div class="menu__item ">
-          <nuxt-link href="/contact" class="menu__item-link ">Contact</nuxt-link>
+          <nuxt-link href="/contact" class="menu__item-link ">Contact </nuxt-link>
           <img class="menu__item-img"  id="right" src="/static/images/lymfedrainage-2.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
-              <span>Contact</span>
-              <span>Contact</span>
-              <span>Contact</span>
-              <span>Contact</span>
+              <span>Contact</span> <NavbarIconNavLinks/>
+              <span>Contact</span> <NavbarIconNavLinks/>
+              <span>Contact</span> <NavbarIconNavLinks/>
+              <span>Contact</span> <NavbarIconNavLinks/>
             </div>
           </div>
         </div>
@@ -504,4 +504,5 @@ input[type="checkbox"] {
 </style>
 
 <script setup lang="ts">
+import IconNavLinks from "~/components/navbar/IconNavLinks.vue";
 </script>
