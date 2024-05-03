@@ -11,7 +11,7 @@
     </div>
     <div class="image-description">
       <h3>Voetreflex massage</h3>
-      <h4>Verken de weg naar innerlijke balans</h4>
+      <h4>Verken de genezende kracht van voetreflexpunten</h4>
       <p>Voetreflexmassage is een therapeutische massagebehandeling die gebaseerd is op de principes van reflexologie.
         Volgens deze principes zijn bepaalde reflexpunten in de voeten verbonden met specifieke organen en
         lichaamsdelen. Door deze punten te stimuleren, kan de energiestroom in het lichaam worden hersteld en kunnen
@@ -30,7 +30,7 @@
 
 <style scoped>
 section {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 5rem 1.5rem;
 }
 
 .image-overlay div {
@@ -49,6 +49,7 @@ section {
 
 .image-description {
   margin: 2.5rem 0;
+  max-width: 22rem;
 }
 
 .image-description h4 {
@@ -60,12 +61,9 @@ section {
 }
 
 @media only screen and (min-width: 48rem) {
+
   .card-element {
     margin-left: 5rem;
-  }
-
-  .image-description {
-    width: 55%;
   }
 }
 
@@ -81,18 +79,23 @@ section {
   }
 
   .image-description {
-    max-width: 48%;
+    max-width: 30rem;
   }
 }
 
 @media (min-width: 90rem) {
+
+  section {
+    padding: 1.5rem 1.5rem 10rem 1.5rem;
+  }
+
   .image-overlay div {
     height: 25rem;
     width: 35rem;
   }
 
   .image-description {
-    max-width: 45%;
+    max-width: 35rem;
   }
 }
 

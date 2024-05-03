@@ -238,10 +238,6 @@ input[type="checkbox"] {
 
 }
 
-
-
-
-
 .marquee {
 	position: absolute;
 	top: 0;
@@ -261,8 +257,6 @@ input[type="checkbox"] {
 	opacity: 0;
 	transition: opacity 0.1s;
 }
-
-
 
 .marquee span {
 	text-align: center;
@@ -381,8 +375,6 @@ input[type="checkbox"] {
   line-height: 5.5rem;
 }
 
-
-
 .marquee span {
   font-size: 5.5rem;
   line-height: 5.5rem;
@@ -416,71 +408,74 @@ input[type="checkbox"] {
     flex-direction: row; /* Keep the direction as default for odd menu items */
   }
 
-
   .menu-contact-button{
-  display: block;
-  margin: 2rem 15rem 0.5rem 0;
-}
+    display: block;
+    margin: 2rem 15rem 0.5rem 0;
+  }
 
-#active:checked + .menu-btn p {
-  color: var(--background-color)
-}
+  #active:checked + .menu-btn p {
+    color: var(--background-color)
+  }
 
-.logo {
-  margin: 2.5rem 0 0 4rem;
-}
+  .logo {
+    margin: 2.5rem 0 0 4rem;
+  }
 
-.menu-btn {
-  right: 3rem;
-  top: 2rem;
-}
+  .menu-btn {
+    right: 3rem;
+    top: 2rem;
+  }
 
-.close {
-  right: 3rem;
-  top: 2rem;
-}
+  .close {
+    right: 3rem;
+    top: 2rem;
+  }
 
-#active:checked + .menu-btn:before {
-  border-color: var(--background-color);
-}
+  #active:checked + .menu-btn:before {
+    border-color: var(--background-color);
+  }
 
-#active:checked + .menu-btn:after {
-  border-color: var(--background-color);
-}
+  #active:checked + .menu-btn:after {
+    border-color: var(--background-color);
+  }
 
-.menu__item {
-  padding-left: 10rem;
-}
+  .menu__item {
+    padding-left: 10rem;
+  }
 
-.menu__item-img {
-	height: 30vh;
-}
+  .menu__item-img {
+    height: 30vh;
+  }
 
-.menu__item-link {
-  font-size: 7rem;
-  line-height: 7rem;
-}
+  .menu__item-link {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
 
-.marquee span {
-  font-size: 7rem;
-  line-height: 7rem;
-}
+  .marquee span {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
 
-.contact-items {
-  position: absolute;
-  width: 30%;
-  height: 100%;
-  right: 0;
-  background-color: var(--primary);
-  padding: 2rem 1.5rem;
-}
+  .contact-items {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    background-color: var(--primary);
+    padding: 2rem 1.5rem;
+  }
 
-.flex-contain{
-  position: absolute;
-  bottom: 5rem;
-  right: 5rem;
-  flex-direction: column;
-}
+  .flex-contain{
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    flex-direction: column;
+  }
+
+  .menu__item-link:hover {
+      opacity: 0;
+    }
 
   .menu__item-link:hover + #right {
     opacity: 1;
@@ -499,14 +494,6 @@ input[type="checkbox"] {
     opacity: 1;
     transition-duration: 0.4s;
   }
-
-
-
-
 }
 
 </style>
-
-<script setup lang="ts">
-import IconNavLinks from "~/components/navbar/IconNavLinks.vue";
-</script>

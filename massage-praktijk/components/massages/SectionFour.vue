@@ -49,6 +49,7 @@ section {
 
 .image-description {
   margin: 2.5rem 0;
+  max-width: 22rem;
 }
 
 .image-description h4 {
@@ -62,10 +63,6 @@ section {
 @media only screen and (min-width: 48rem) {
   .card-element {
     margin-left: 18rem;
-  }
-
-  .image-description {
-    width: 85%;
   }
 }
 
@@ -81,7 +78,7 @@ section {
   }
 
   .image-description {
-    max-width: 70%;
+    max-width: 30rem;
   }
 }
 
@@ -96,7 +93,7 @@ section {
   }
 
   .image-description {
-    max-width: 65%;
+    max-width: 35rem;
   }
 }
 

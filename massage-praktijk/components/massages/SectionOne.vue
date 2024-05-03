@@ -11,7 +11,6 @@
       </div>
     </div>
 
-
     <div class="flex-container-intro">
       <div class="flex-wrapper-intro">
         <h3>Welkom bij Massagepraktijk Amy de Wit</h3>
