@@ -6,20 +6,18 @@
   <section>
     <div class="flex-container-text">
       <div class="flex-wrapper">
-      <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo">
-      <h1>Lymfe<span>drainage</span></h1>
+        <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo">
+        <h1>Lymfe<span>drainage</span></h1>
       </div>
       <h2>Stimuleer je natuurlijke herstel</h2>
-
-
     </div>
 
     <div class="flex-wrapper-image">
       <div class="flex-wrapper-text">
-      <h3>Ontdek de Zachte Kracht van Lymfedrainage</h3>
-    <p>Welkom op de pagina gewijd aan lymfedrainage bij Massagepraktijk Amy de Wit. Lymfedrainage is een bijzonder
-      effectieve massagebehandeling die gericht is op het stimuleren van het lymfestelsel, wat essentieel is voor het
-      afvoeren van vocht en afvalstoffen uit het lichaam.</p>
+        <h3>Ontdek de Zachte Kracht van Lymfedrainage</h3>
+        <p>Welkom op de pagina gewijd aan lymfedrainage bij Massagepraktijk Amy de Wit. Lymfedrainage is een bijzonder
+          effectieve massagebehandeling die gericht is op het stimuleren van het lymfestelsel, wat essentieel is voor het
+          afvoeren van vocht en afvalstoffen uit het lichaam.</p>
       </div>
     <div class="image-overlay">
       <div>
@@ -85,18 +83,23 @@ span {
   opacity: 0.8;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 40rem) {
+
+  .flex-container-text {
+    gap: 1rem;
+    margin: 0 1.5rem 2rem 3rem;
+  }
+
   h1 {
     margin-left: 3rem;
   }
 
   h2, h3 {
-    margin-left: 4.7rem;
+    margin-left: 4.5rem;
   }
 
   h3, p{
-    margin-left: 6.4rem;
-    width: 40%;
+    margin-left: 7.5rem;
   }
 
   .flex-wrapper{
@@ -114,35 +117,31 @@ span {
   }
 
   .flex-wrapper-image {
-    position: relative;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .image-overlay div {
-    width: 20rem;
-    position: absolute;
-    margin-left: -19rem;
+    width: 15rem;
+      height: 15rem;
   }
 }
 
 @media only screen and (min-width: 70rem) {
+
   section {
     margin-top: 12rem;
   }
 
-  h1 {
-    margin-left: 5rem;
-  }
-
   h2 {
-    margin-left: 6.6rem;
+    margin-left: 6rem;
     font-size: 4.5rem;
   }
 
-  h3, p {
-    width: 45%;
+  .flex-container-text img {
+    width: 2rem;
+    margin-right: 1rem
   }
 
   .flex-container-text {
@@ -150,34 +149,46 @@ span {
   }
 
   .flex-wrapper-image {
-    margin-top: 4rem;
-    margin-left: 4.1rem;
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+
+  .flex-wrapper-text {
+    margin-left: 2.5rem;
   }
 
   .image-overlay div {
+    margin-top: 1rem;
     width: 25rem;
-    height: 20rem;
-    margin-left: -25rem;
+    height: 25rem;
   }
 }
 
 @media only screen and (min-width: 90rem) {
-  .flex-container-text img {
-    width: 2rem;
+
+  section {
+    margin-top: 14rem;
   }
 
   h2 {
-    margin-left: 7rem;
+    margin-left: 12rem;
+  }
+
+  .flex-container-text img {
+    margin-right: 7rem
+  }
+
+  .flex-container-text {
+    margin-left: 4rem;
   }
 
   .flex-wrapper-image {
-    margin-left: 5rem;
+    margin-left: 6rem;
   }
 
   .image-overlay div {
-    width: 30rem;
-    height: 25rem;
-    margin-left: -30rem;
+    width: 35rem;
+    height: 30rem;
   }
 }
 

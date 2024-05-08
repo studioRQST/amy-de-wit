@@ -7,7 +7,7 @@
     <div class="flex-container">
       <div class="flex-wrapper">
         <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo">
-        <h1><span class="span-brown">Ontdek</span> mijn massages </h1>
+        <h1><span class="span-brown">Ontdek</span><span>mijn</span>massages</h1>
       </div>
     </div>
 
@@ -18,6 +18,7 @@
           en
           welzijn te bevorderen.</p>
       </div>
+
       <div class="image-overlay">
         <div>
           <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
@@ -31,6 +32,12 @@
 
   section {
     padding: 8rem 0 2rem 0;
+  }
+
+  h1{
+    display: flex;
+    gap: 0 1rem;
+    flex-wrap: wrap;
   }
 
   h3, p {
@@ -80,6 +87,7 @@
       padding: 2rem 3rem 2rem 3rem;
       font-size: 6rem;
       line-height: 6rem;
+      max-width: 30rem;
     }
 
     .flex-container img {
@@ -111,6 +119,8 @@
       padding: 4rem 3rem 4rem 3rem;
       font-size: 8rem;
       line-height: 8rem;
+      max-width: 50rem;
+      gap: 0 2rem;
     }
 
     .flex-container img {
@@ -139,11 +149,11 @@
 
     .flex-container-intro {
       padding-left: 14rem;
-      gap: 20rem;
+      gap: 15rem;
     }
 
     .image-overlay div {
-      margin-top: -5rem;
+      margin-top: -8rem;
       width: 35rem;
       height: 30rem;
     }

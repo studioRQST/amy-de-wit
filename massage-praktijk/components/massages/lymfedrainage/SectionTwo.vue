@@ -28,14 +28,18 @@ span {
   font-family: bebas-neue-pro, sans-serif;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 40rem) {
   section {
     margin-top: 5rem;
-    margin-left: 1.5rem;
+    margin-left: 3rem;
   }
 
   span {
     display: inline;
+  }
+
+  p{
+    max-width: 30rem;
   }
 }
 
@@ -43,10 +47,6 @@ span {
   section {
     margin-top: 13rem;
     margin-left: 4rem;
-  }
-
-  p {
-    width: 80%;
   }
 }
 
