@@ -68,12 +68,12 @@ export default {
         <div class="image-wrapper">
             <div class="home-image-overlay">
                 <div>
-                    <img src="/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="800" height="600"></img>
+                    <nuxt-img src="/images/new-lymfedrainage-1.jpg" alt="Afbeelding Lymfedrainage" loading="lazy" width="500" height="300"></nuxt-img>
                 </div>
             </div>
             <div class="home-image-overlay">
                 <div>
-                    <img src="/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="800" height="600"></img>
+                    <nuxt-img src="/images/new-lymfedrainage-3.jpg" alt="Afbeelding Lymfedrainage" loading="lazy" width="300" height="300"></nuxt-img>
                 </div>
             </div>
         </div>
