@@ -1,53 +1,4 @@
-<script>
-import { gsap } from 'gsap';
-
-export default {
-    mounted() {
-    // GSAP animation
-    gsap.from(".home-wrapper", {
-        x: -100, 
-        opacity: 0,
-        duration: 1, 
-        ease: "power2.out" 
-    });
-
-    gsap.from(".home-image-overlay", {
-        y: -100,
-        opacity: 0,
-        duration: 1,
-        ease: "power2.out",
-        stagger: 0.5,
-        delay: 2.5 
-    });
-
-    gsap.from([".home-intro-contain h1", ".home-intro-contain-text h4"], {
-        opacity: 0,
-        x: 50,
-        duration: 1,
-        ease: "power2.out",
-        stagger: 0.5,
-        delay: 0.5
-    });
-
-    gsap.from([".home-intro-contain img", ".home-intro-contain-text img"], {
-        opacity: 0,
-        scale: 0.5,
-        duration: 1,
-        ease: "back.out",
-        stagger: 0.5,
-        delay: 1
-    });
-
-    gsap.from(".wrapper h1", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        ease: "power2.out",
-        delay: 1.5
-    });
-}
-}
-</script>
+<script></script>
 
 <template>
     <section>
@@ -68,12 +19,12 @@ export default {
         <div class="image-wrapper">
             <div class="home-image-overlay">
                 <div>
-                    <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
+                    <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="100" height="100">
                 </div>
             </div>
             <div class="home-image-overlay">
                 <div>
-                    <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
+                    <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="100" height="100">
                 </div>
             </div>
         </div>
