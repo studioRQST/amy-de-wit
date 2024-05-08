@@ -54,12 +54,12 @@ export default {
         <div class="container">
             <div class="home-wrapper">
                 <div class="home-intro-contain">
-                    <h1>Verlicht<nuxt-img src="/icons/icon-logo-horizontaal.svg" alt="Icoon Logo" loading="lazy" width="50" height="50"></nuxt-img>Herstel<span>&</span></h1>
+                    <h1>Verlicht<img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo" loading="lazy">Herstel<span>&</span></h1>
                 </div>
                 <div class="wrapper">
                     <h1>Vernieuw</h1>
                     <div class="home-intro-contain-text">
-                        <nuxt-img src="/icons/icon-star-brown.svg" alt="Icoon Ster" loading="lazy" width="40" height="40"></nuxt-img>
+                        <img src="/static/icons/icon-star-brown.svg" alt="Icoon Ster" loading="lazy">
                         <h4>Ontdek de kracht van <span>lymfedrainage</span> en <span>sportmassage</span> voor een optimaal herstel</h4>
                     </div>
                 </div>
@@ -68,18 +68,17 @@ export default {
         <div class="image-wrapper">
             <div class="home-image-overlay">
                 <div>
-                    <nuxt-img src="/images/new-lymfedrainage-1.jpg" alt="Afbeelding Lymfedrainage" loading="lazy" width="500" height="300"></nuxt-img>
+                    <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
                 </div>
             </div>
             <div class="home-image-overlay">
                 <div>
-                    <nuxt-img src="/images/new-lymfedrainage-3.jpg" alt="Afbeelding Lymfedrainage" loading="lazy" width="300" height="300"></nuxt-img>
+                    <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 </template>
-
 
 <style scoped>
 
@@ -146,7 +145,6 @@ export default {
 }
 
 .home-intro-contain-text img {
-    margin-top: 1rem;
     animation: rotateStar 6s linear infinite; 
 }
 
