@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['assets/main.css'],
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+
+  modules: ["@nuxt/image"]
 })
