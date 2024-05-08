@@ -4,8 +4,14 @@ export default defineNuxtConfig({
   css: ['assets/main.css'],
 
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
-  },
-
-  modules: ["@nuxt/image"]
+    head: {
+        htmlAttrs: {
+            lang: 'nl',
+        },
+        link: [
+            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+        ]
+    },
+    pageTransition: {name: 'page', mode: 'out-in'}
+},
 })
