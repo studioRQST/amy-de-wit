@@ -2,65 +2,50 @@
 import { gsap } from 'gsap';
 
 export default {
-  mounted() {
+    mounted() {
     // GSAP animation
     gsap.from(".home-wrapper", {
-      x: -100, 
-      opacity: 0,
-      duration: 1, 
-      ease: "power2.out" 
+        x: -100, 
+        opacity: 0,
+        duration: 1, 
+        ease: "power2.out" 
     });
 
     gsap.from(".home-image-overlay", {
-      y: -100,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-      stagger: 0.5,
-      delay: 3 
+        y: -100,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.5,
+        delay: 2.5 
     });
 
-    // Additional animations
-    gsap.from(".home-intro-contain h1", {
-      opacity: 0,
-      x: 100,
-      duration: 1,
-      ease: "power2.out",
-      delay: 0.5
+    gsap.from([".home-intro-contain h1", ".home-intro-contain-text h4"], {
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.5,
+        delay: 0.5
     });
 
-    gsap.from(".home-intro-contain img", {
-      opacity: 0,
-      scale: 0.5,
-      duration: 1,
-      ease: "back.out",
-      delay: 1
+    gsap.from([".home-intro-contain img", ".home-intro-contain-text img"], {
+        opacity: 0,
+        scale: 0.5,
+        duration: 1,
+        ease: "back.out",
+        stagger: 0.5,
+        delay: 1
     });
 
     gsap.from(".wrapper h1", {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power2.out",
-      delay: 1.5
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out",
+        delay: 1.5
     });
-
-    gsap.from(".home-intro-contain-text img", {
-      opacity: 0,
-      scale: 0.5,
-      duration: 1,
-      ease: "back.out",
-      delay: 2
-    });
-
-    gsap.from(".home-intro-contain-text h4", {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power2.out",
-      delay: 2.5
-    });
-  }
+}
 }
 </script>
 
@@ -69,12 +54,12 @@ export default {
         <div class="container">
             <div class="home-wrapper">
                 <div class="home-intro-contain">
-                    <h1>Verlicht<img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo">Herstel<span>&</span></h1>
+                    <h1>Verlicht<img src="/static/icons/icon-logo-horizontaal.svg" alt="Icoon Logo" loading="lazy">Herstel<span>&</span></h1>
                 </div>
                 <div class="wrapper">
                     <h1>Vernieuw</h1>
                     <div class="home-intro-contain-text">
-                        <img src="/static/icons/icon-star-brown.svg" alt="Icoon Ster">
+                        <img src="/static/icons/icon-star-brown.svg" alt="Icoon Ster" loading="lazy">
                         <h4>Ontdek de kracht van <span>lymfedrainage</span> en <span>sportmassage</span> voor een optimaal herstel</h4>
                     </div>
                 </div>
@@ -83,12 +68,12 @@ export default {
         <div class="image-wrapper">
             <div class="home-image-overlay">
                 <div>
-                    <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage">
+                    <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
                 </div>
             </div>
             <div class="home-image-overlay">
                 <div>
-                    <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
+                    <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
                 </div>
             </div>
         </div>
@@ -302,6 +287,4 @@ export default {
     }
 
 }
-
-
 </style>
