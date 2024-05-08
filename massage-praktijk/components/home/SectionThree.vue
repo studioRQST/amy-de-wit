@@ -23,7 +23,7 @@ export default defineComponent({
       },
     });
 
-    // Extra fancy effects
+    // Extra fancy effects (Combined into one animation)
     gsap.to(".text p", {
       scale: 1.2,
       scrollTrigger: {
@@ -105,6 +105,4 @@ section {
     padding: 30rem 5rem;
   }
 }
-
-
 </style>

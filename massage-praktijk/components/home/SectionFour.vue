@@ -24,12 +24,12 @@ onMounted(() => {
 <template>
     <section>
         <div class="intro-contain">
-            <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo">
+            <img src="/static/icons/icon-logo-verticaal.svg" alt="Icoon Logo" loading="lazy">
             <h2><span>Ontmoet</span> Amy</h2>
         </div>
         <div class="image-overlay">
             <div ref="imageElement">
-                <img src="/static/images/dit-ben-ik.avif" alt="Afbeelding Lymfedrainage">
+                <img src="/static/images/dit-ben-ik.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
             </div>
         </div>
         <div class="image-description">

@@ -1,48 +1,47 @@
 <script setup lang="ts">
-    import { onMounted } from 'vue';
+    import { onMounted, ref } from 'vue';
     import { gsap } from 'gsap';
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
     gsap.registerPlugin(ScrollTrigger);
 
-    onMounted(() => {
-        const cardElement = document.querySelector('.card-animation-2');
+    const cardElement = ref<HTMLElement | null>(null);
 
-        gsap.from(cardElement, {
+    onMounted(() => {
+        gsap.from(cardElement.value, {
             x: '100%',
             opacity: 0,
             ease: 'power3.out',
             scrollTrigger: {
-                duration: 1,
-                trigger: cardElement,
+                trigger: cardElement.value,
                 start: 'top 100%',
-                end: 'bottom 10%',
+                end: 'bottom 50%',
                 scrub: true,
-                },
+            },
         });
     });
 </script>
 
 <template>
 <section>
-    <div class="card-animation-2">
-    <div class="image-overlay">
-        <div>
-            <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage">
+    <div ref="cardElement">
+        <div class="image-overlay">
+            <div>
+                <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
+            </div>
         </div>
-    </div>
-    <div class="image-description">
-        <h3>Sportmassage</h3>
-        <h4>Optimaliseer Jouw Prestaties met Sportmassage</h4>
-        <nuxt-link href="/massage/sportmassage" aria-label="Link naar pagina sportmassage">
-            <button class="primary-button">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Lees meer</span>
-            </button>
-        </nuxt-link>
-    </div> 
+        <div class="image-description">
+            <h3>Sportmassage</h3>
+            <h4>Optimaliseer Jouw Prestaties met Sportmassage</h4>
+            <nuxt-link href="/massage/sportmassage" aria-label="Link naar pagina sportmassage">
+                <button class="primary-button">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Lees meer</span>
+                </button>
+            </nuxt-link>
+        </div> 
     </div>   
 </section>
 </template>
@@ -119,7 +118,4 @@ section{
         padding: 0 40rem;
     }
 }
-
-
-
 </style>

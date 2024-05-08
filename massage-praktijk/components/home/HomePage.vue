@@ -63,13 +63,5 @@ section{
   height: auto;
 }
 
-.section-one {
-  background-color: var(--background-color);
-}
-
-.section-two {
-  background-color: var(--background-color);
-}
-
 </style>
 
