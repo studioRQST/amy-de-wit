@@ -10,6 +10,8 @@ const handleError = () => clearError({redirect: '/'})
 </script>
 
 <template>
+  <link rel="stylesheet" href="https://use.typekit.net/rtt3tac.css">
+
   <section>
     <div class="container-header">
       <h1>404 error</h1>
@@ -41,6 +43,7 @@ section {
 
 h2 {
   color: var(--secondary);
+  font-family: bebas-neue-pro, sans-serif;
 }
 
 
