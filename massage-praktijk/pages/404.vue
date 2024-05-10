@@ -63,6 +63,27 @@ button {
   margin-top: 2rem;
 }
 
+@media (min-width: 40rem) {
+  section {
+    margin-top: 8rem;
+  }
+
+  .container-par {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 70rem) {
+  section {
+    margin-left: 8rem;
+
+  }
+
+  .container-par {
+    width: 80%;
+  }
+}
+
 
 
 </style>
