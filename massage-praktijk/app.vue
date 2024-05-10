@@ -13,6 +13,7 @@
         </nuxt-link>
     </NuxtLayout>
   </div>
+
 </template>
 
 
