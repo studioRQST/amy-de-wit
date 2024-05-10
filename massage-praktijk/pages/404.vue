@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import type { NuxtError } from '#app'
 
+const props = defineProps({
+  error: Object as () => NuxtError
+})
+
+
+const handleError = () => clearError({redirect: '/'})
 </script>
 
 <template>
@@ -14,7 +21,7 @@
           klaar om je weer op het juiste spoor te zetten.</p>
     </div>
         <nuxt-link href="/" aria-label="Link naar home page">
-          <button class="primary-button">
+          <button @click="handleError" class="primary-button">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
@@ -28,7 +35,7 @@
 <style scoped>
 section {
   margin-top: 5rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 
 }
 
@@ -46,7 +53,7 @@ h2 {
 }
 
 .container-par {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 1rem
