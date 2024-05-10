@@ -1,21 +1,27 @@
 <script setup lang="ts">
+import type { NuxtError } from '#app'
 
+const props = defineProps({
+  error: Object as () => NuxtError
+})
+
+
+const handleError = () => clearError({redirect: '/'})
 </script>
 
 <template>
   <section>
     <div class="container-header">
-      <h1>Bedankt</h1>
-      <h2>Je bericht is succesvol verzonden!</h2>
+      <h1>404 error</h1>
+      <h2>Pagina niet gevonden</h2>
     </div>
     <div class="container-par">
-      <h3>Bedankt voor het nemen van de tijd om contact met mij op te nemen</h3>
-      <p>Ik waardeer je interesse en zal zo snel mogelijk reageren. In de tussentijd, voel je vrij om verder te bladeren
-        op mijn website of keer terug naar de homepage.
-      </p>
+      <h3>Het lijkt erop dat je een verkeerde afslag hebt genomen!</h3>
+      <p>De pagina die je probeert te bereiken, bestaat niet (meer) of is verplaatst. Maar geen zorgen, ik sta voor je
+        klaar om je weer op het juiste spoor te zetten.</p>
     </div>
     <nuxt-link href="/" aria-label="Link naar home page">
-      <button class="primary-button">
+      <button @click="handleError" class="primary-button">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
@@ -38,6 +44,7 @@ h2 {
 }
 
 
+
 .container-header {
   display: flex;
   flex-direction: column;
@@ -58,7 +65,7 @@ button {
 
 @media (min-width: 40rem) {
   section {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   .container-par {
@@ -68,13 +75,15 @@ button {
 
 @media (min-width: 70rem) {
   section {
-    margin: 8rem 0 0 8rem;
+    margin-left: 8rem;
+
   }
 
   .container-par {
     width: 80%;
   }
 }
+
 
 
 </style>
