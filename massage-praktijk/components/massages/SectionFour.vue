@@ -6,7 +6,7 @@
   <section class="card-element">
     <div class="image-overlay">
       <div>
-        <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage">
+        <img src="/static/images/sportmassage-4.avif" alt="Afbeelding Lymfedrainage">
       </div>
     </div>
     <div class="image-description">

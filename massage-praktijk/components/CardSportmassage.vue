@@ -27,7 +27,7 @@
     <div ref="cardElement">
         <div class="image-overlay">
             <div>
-                <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
+                <img src="/static/images/sportmassage-4.avif" alt="Afbeelding Lymfedrainage" loading="lazy">
             </div>
         </div>
         <div class="image-description">

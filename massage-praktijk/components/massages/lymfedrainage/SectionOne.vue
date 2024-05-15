@@ -21,7 +21,7 @@
       </div>
     <div class="image-overlay">
       <div>
-        <img src="/static/images/lymfedrainage-2.avif" alt="Afbeelding Lymfedrainage">
+        <img src="/static/images/lymfedrainage-1.avif" alt="Afbeelding Lymfedrainage">
       </div>
     </div>
     </div>

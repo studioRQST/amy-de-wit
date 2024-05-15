@@ -25,7 +25,7 @@
        <div class="menu">
         <div class="menu__item">
           <nuxt-link href="/" class="menu__item-link">Home</nuxt-link>
-          <img class="menu__item-img" id="left" src="/static/images/lymfedrainage.avif" alt="Some image"/>
+          <img class="menu__item-img" id="left" src="/static/images/lymfedrainage-1.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Home</span> <NavbarIconNavLinks/>
@@ -37,7 +37,7 @@
         </div>
         <div class="menu__item">
           <nuxt-link href="/massages" class="menu__item-link">Massages</nuxt-link>
-          <img class="menu__item-img" id="right"  src="/static/images/lymfedrainage-2.avif" alt="Some image"/>
+          <img class="menu__item-img" id="right"  src="/static/images/sportmassage-3.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Massages</span> <NavbarIconNavLinks/>
@@ -49,7 +49,7 @@
         </div>
         <div class="menu__item">
           <nuxt-link href="/over-mij" class="menu__item-link">Over mij</nuxt-link>
-          <img class="menu__item-img" id="left"  src="/static/images/lymfedrainage.avif" alt="Some image"/>
+          <img class="menu__item-img" id="left"  src="/static/images/lymfedrainage-2.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Over mij</span> <NavbarIconNavLinks/>
@@ -61,7 +61,7 @@
         </div>
         <div class="menu__item ">
           <nuxt-link href="/contact" class="menu__item-link ">Contact </nuxt-link>
-          <img class="menu__item-img"  id="right" src="/static/images/lymfedrainage-2.avif" alt="Some image"/>
+          <img class="menu__item-img"  id="right" src="/static/images/praktijk-wand.avif" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
               <span>Contact</span> <NavbarIconNavLinks/>

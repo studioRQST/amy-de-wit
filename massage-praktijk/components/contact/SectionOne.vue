@@ -13,7 +13,6 @@
         <h2>Ik sta voor je klaar!</h2>
         <p>Heb je vragen, wil je meer informatie over mijn massages of wil je een afspraak maken? Aarzel niet om contact met
           mij op te nemen. Ik kijk ernaar uit om u te verwelkomen in mijn praktijk!</p>
-          <ContactForm/>
       </div>
     </div>
   </section>

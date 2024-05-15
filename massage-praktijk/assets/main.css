@@ -15,13 +15,8 @@
 
 body {
     background-color: var(--background-color);
-
-}
-
-img:hover, a:hover, button:hover {
     cursor: url('/static/icons/custom-cursor.svg'), auto;
 }
-
 
 /* HTML */
 
@@ -77,6 +72,7 @@ a {
     line-height: 1.4rem;
     color: var(--tertiary);
 }
+
 
 /* PRIMARY BUTTON  */
 
@@ -159,6 +155,10 @@ a {
   .primary-button:hover .button-text {
     color: var(--background-color);
   }
+
+  /* .primary-button:focus-visible{
+    background-color: red;
+  } */
 
   /* SECONDARY BUTTON  */
 

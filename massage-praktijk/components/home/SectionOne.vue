@@ -68,12 +68,12 @@ export default {
         <div class="image-wrapper">
             <div class="home-image-overlay">
                 <div>
-                    <img src="/static/images/lymfedrainage.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="100" height="100">
+                    <img src="/static/images/sportmassage-3.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="100" height="100">
                 </div>
             </div>
             <div class="home-image-overlay">
                 <div>
-                    <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="100" height="100">
+                    <img src="/static/images/welkom-praktijk.avif" alt="Afbeelding Lymfedrainage" loading="lazy" width="100" height="100">
                 </div>
             </div>
         </div>

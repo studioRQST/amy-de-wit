@@ -30,7 +30,7 @@
       </div>
       <div class="image-overlay">
         <div>
-          <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
+          <img src="/static/images/lymfedrainage-11.avif" alt="Afbeelding Lymfedrainage">
         </div>
       </div>
     </div>
@@ -69,7 +69,7 @@ span {
 .image-overlay img {
   object-fit: cover;
   width: 100%;
-  height: 130%;
+  height: 100%;
   opacity: 0.8;
 }
 

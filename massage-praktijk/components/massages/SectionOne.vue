@@ -21,7 +21,7 @@
 
       <div class="image-overlay">
         <div>
-          <img src="/static/images/lymfedrainage-3.avif" alt="Afbeelding Lymfedrainage">
+          <img src="/static/images/sportmassage.avif" alt="Afbeelding Lymfedrainage">
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
   .image-overlay img {
     object-fit: cover;
     width: 100%;
-    height: 130%;
+    height: 120%;
     opacity: 0.8;
   }
 
@@ -136,6 +136,10 @@
     .image-overlay div {
       width: 25rem;
       height: 25rem;
+    }
+
+    .image-overlay img {
+      height: 100%;
     }
   }
 
