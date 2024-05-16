@@ -1,7 +1,7 @@
 <template>
   <form action="https://api.web3forms.com/submit" method="POST">
     <!-- Replace with your Access Key -->
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+    <input type="hidden" name="access_key" value="af862cb0-98e2-4c82-99d6-0a8a639d5be6">
 
     <!-- Form Inputs. Each input must have a name="" attribute -->
     <div class="flex-container">
