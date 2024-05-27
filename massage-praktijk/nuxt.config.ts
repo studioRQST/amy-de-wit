@@ -1,17 +1,26 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  css: ['assets/main.css'],
+    devtools: { enabled: true },
+    css: ['assets/main.css'],
 
-  app: {
-    head: {
-        htmlAttrs: {
-            lang: 'nl',
-        },
-        link: [
-            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
-        ]
+    app: {
+      head: {
+          htmlAttrs: {
+              lang: 'nl',
+          },
+          link: [
+              {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+          ]
+      },
+      pageTransition: {name: 'page', mode: 'out-in'}
+  },
+
+    modules: ["@nuxtjs/sitemap"],
+    sitemap: {
+        exclude: [
+            '/404',
+            '/algemene-voorwaarden',
+            '/succes-page-form',
+        ],
     },
-    pageTransition: {name: 'page', mode: 'out-in'}
-},
 })
