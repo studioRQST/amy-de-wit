@@ -1,3 +1,20 @@
+<script>
+export default {
+  head() {
+    return {
+      title: "Verlicht Herstel & Vernieuw - Massagepraktijk Amy de Wit",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Ontdek de kracht van lymfedrainage en sportmassage voor optimaal herstel bij Massagepraktijk Amy de Wit. Laat mij je begeleiden op een reis van herstel en vernieuwing in Hem."
+        },
+      ]
+    };
+  }
+};
+</script>
+
 <template>
   <div>
     <link rel="stylesheet" href="https://use.typekit.net/rtt3tac.css">
@@ -13,7 +30,6 @@
         </nuxt-link>
     </NuxtLayout>
   </div>
-
 </template>
 
 
