@@ -235,7 +235,6 @@ input[type="checkbox"] {
 	opacity: 0;
 	left: 85vw;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
-
 }
 
 .marquee {
