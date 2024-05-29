@@ -1,5 +1,5 @@
 <template>
-  <form action="https://api.web3forms.com/submit" method="POST">
+  <form action=/succes-page-form method="POST">
     <!-- Replace with your Access Key -->
     <input type="hidden" name="access_key" value="af862cb0-98e2-4c82-99d6-0a8a639d5be6">
 
