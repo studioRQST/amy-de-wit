@@ -21,6 +21,7 @@
       <span></span>
     </label>
     <label for="active" class="close"></label>
+
     <div class="wrapper">
        <div class="menu">
         <div class="menu__item">
@@ -493,6 +494,16 @@ input[type="checkbox"] {
     opacity: 1;
     transition-duration: 0.4s;
   }
+
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+
 }
 
 </style>
