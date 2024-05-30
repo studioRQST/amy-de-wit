@@ -21,10 +21,10 @@ body {
 /* Overschrijf de dark mode instellingen */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #FFFBF6;
-        --primary: #1D5983;
-        --secondary: #9C866C;
-        --tertiary: #312F48;
+        --background-color: #FFFBF6 !important;
+        --primary: #1D5983 !important;
+        --secondary: #9C866C !important;
+        --tertiary: #312F48 !important;
     }
 
     body {
