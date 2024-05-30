@@ -73,6 +73,25 @@
             <p>Elbaweg 30</p>
             <p>1607 MP Hem</p>
           </div>
+          <div>
+            <h3>Openingstijden</h3>
+            <div class="wrapper-date">
+              <div>
+                <p class="date-text">Dinsdag</p>
+                <p>9.00 t/m 14.00</p>
+                <p>19.30 t/m 21.00</p>
+              </div>
+              <div>
+                <p class="date-text">Woensdag</p>
+                <p>10.45 t/m 14.00</p>
+                <p>19.30 t/m 21.00</p>
+              </div>
+              <div>
+                <p class="date-text">Donderdag</p>
+                <p>9.00 t/m 14.00</p>
+              </div>
+            </div>
+          </div>
       </div>
       </div>
     </section>
@@ -81,10 +100,9 @@
     <section class="footer-part-three">
       <div>
         <h3>
-          Copyright © 2024 massagepraktijk amy de wit • powered by Studio RQST •
-          <nuxt-link href="/algemene-voorwaarden" aria-label="Link naar pagina algemene voorwaarden">algemene
-            voorwaarden
-          </nuxt-link>
+          Copyright © 2024 massagepraktijk amy de wit • powered by 
+          <nuxt-link href="http://www.rqst.studio" class="bold-text" aria-label="Link naar website van Studio Request">Studio RQST</nuxt-link>
+          <nuxt-link href="/algemene-voorwaarden" aria-label="Link naar pagina algemene voorwaarden">• algemene voorwaarden</nuxt-link>
         </h3>
       </div>
     </section>
@@ -188,6 +206,11 @@ button{
   text-decoration: none;
 }
 
+.flex-container-2 div .date-text{
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
 .footer-part-three {
   background-color: var(--tertiary);
   padding: 0 1.5rem;
@@ -198,6 +221,15 @@ button{
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 2rem 0;
+}
+
+.bold-text{
+  font-weight: 600;
+  color: red
+}
+
+.footer-part-three h3 .bold-text{
+  font-weight: 600;
 }
 
 .footer-part-three a {
@@ -287,6 +319,13 @@ a:focus {
 
   .footer-part-two {
     margin: 4rem 6rem 4rem 4rem;
+  }
+
+  .flex-container-2 .wrapper-date{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: -1rem;
   }
 
   .footer-part-three {
