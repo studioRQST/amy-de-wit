@@ -50,7 +50,8 @@ input {
   border-radius: 5px;
   border: 2px solid var(--secondary);
   padding: 1rem;
-  background-color: var(--background-color)
+  background-color: var(--background-color);
+  font-size: 1rem;
 }
 
 textarea {
@@ -63,6 +64,7 @@ textarea {
   padding: 1rem;
   background-color: var(--background-color);
   resize: none;
+  font-size: 1rem;
 }
 
 input:focus,
