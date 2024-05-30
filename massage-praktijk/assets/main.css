@@ -16,9 +16,16 @@
 /* Overschrijf de dark mode instellingen */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #FFFBF6;
+        --background-color: #FFFBF6; /* Herhaal de gewenste lichte kleur */
+        --primary: #1D5983;
+        --secondary: #9C866C;
+        --tertiary: #312F48;
     }
-}
+
+    body {
+        background-color: var(--background-color) !important; /* Forceer de lichte achtergrondkleur */
+        color: var(--tertiary) !important; /* Forceer de tekstkleur */
+    }
 
 
 body {
