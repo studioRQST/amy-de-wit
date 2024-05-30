@@ -13,6 +13,14 @@
     --tertiary: #312F48;
 }
 
+/* Overschrijf de dark mode instellingen */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #FFFBF6;
+    }
+}
+
+
 body {
     background-color: var(--background-color);
     cursor: url('/static/icons/custom-cursor.svg'), auto;
@@ -318,10 +326,4 @@ a {
     
   }
 
-/* Overschrijf de dark mode instellingen */
-@media (prefers-color-scheme: dark) {
-    :root {
-        background-color: var(--background-color);
-    }
-}
 
