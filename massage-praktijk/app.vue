@@ -1,4 +1,5 @@
-
+<!--VERIFICATION GOOGLE SEARCH CONSOLE -->
+<meta name="google-site-verification" content="k78kVvXKEFlpd1HKrnnbjzbu6JuGbGj4zzW6ve8BvhI" />
 
 <template>
   <div>
