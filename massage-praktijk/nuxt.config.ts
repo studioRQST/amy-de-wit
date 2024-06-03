@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     },
 
     modules: ["@nuxtjs/sitemap",
-        ['nuxt-gtag', {id: 'G-CD01818L2J'}],
+        ['nuxt-gtag', { id: 'G-CD01818L2J' }],
     ],
     sitemap: {
         exclude: [
