@@ -33,7 +33,7 @@
         <div class="image-description">
             <h3>Sportmassage</h3>
             <h4>Optimaliseer Jouw Prestaties met Sportmassage</h4>
-            <nuxt-link href="/massages/sportmassage" aria-label="Link naar pagina sportmassage">
+            <nuxt-link href="/massage/sportmassage" aria-label="Link naar pagina sportmassage">
                 <button class="primary-button">
                     <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>

@@ -33,7 +33,7 @@
         <div class="image-description">
             <h3>Voetreflexmassage</h3>
             <h4>Verken de genezende kracht van Voetreflexpunten</h4>
-            <nuxt-link href="/massages/voetreflex" aria-label="Link naar pagina voetreflexmassage">
+            <nuxt-link href="/massage/voetreflex" aria-label="Link naar pagina voetreflexmassage">
                 <button class="primary-button">
                     <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>
