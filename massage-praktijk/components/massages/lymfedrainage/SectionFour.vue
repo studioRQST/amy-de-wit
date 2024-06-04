@@ -14,7 +14,6 @@
     <div class="flex-wrapper-image">
       <div class="flex-wrapper-text">
         <p>
-          Herstel en Verlichting voor Weefselschade
           Lymfe taping is een geavanceerde techniek waarbij elastisch tape wordt gebruikt om vochtafvoer te bevorderen
           en
           bindweefselproblemen te verminderen. Bij Massagepraktijk Amy de Wit wordt deze methode toegepast als

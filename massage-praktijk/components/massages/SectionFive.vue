@@ -16,7 +16,7 @@
         Volgens deze principes zijn bepaalde reflexpunten in de voeten verbonden met specifieke organen en
         lichaamsdelen. Door deze punten te stimuleren, kan de energiestroom in het lichaam worden hersteld en kunnen
         blokkades worden opgeheven, wat leidt tot fysieke en mentale ontspanning en welzijn.</p>
-      <nuxt-link href="/massage/voetreflex" aria-label="Link naar pagina sportmassage">
+      <nuxt-link href="/massages/voetreflex" aria-label="Link naar pagina sportmassage">
         <button class="primary-button">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>

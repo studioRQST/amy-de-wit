@@ -15,7 +15,6 @@
     <div class="flex-wrapper-image">
       <div class="flex-wrapper-text">
         <p>
-
           Voetreflexmassage is een effectieve techniek gericht op herstel en verlichting, zelfs zonder specifieke
           klachten. Het helpt het lichaam te herstellen en bevordert de algehele gezondheid. Of je nu last hebt van
           acute of chronische klachten, voetreflexmassage kan verlichting bieden en het herstelproces ondersteunen. Het

@@ -16,7 +16,7 @@
         doorbloeding van de spieren, het verminderen van spierspanning en het bevorderen van herstel na fysieke
         activiteit. Of je nu een atleet bent die zijn prestaties wil verbeteren of gewoon op zoek bent naar verlichting
         van spierpijn en spanning, sportmassage kan helpen om jouw lichaam te ondersteunen en te versterken.</p>
-        <nuxt-link href="/massage/sportmassage" aria-label="Link naar pagina sportmassage">
+        <nuxt-link href="/massages/sportmassage" aria-label="Link naar pagina sportmassage">
             <button class="primary-button">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>

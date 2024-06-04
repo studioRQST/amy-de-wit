@@ -15,7 +15,6 @@
     <div class="flex-wrapper-image">
       <div class="flex-wrapper-text">
         <p>
-
           Nadat ik jouw persoonlijke situatie heb geëvalueerd, werk ik samen met jou aan een aangepast stappenplan om de
           massage perfect af te stemmen op jouw sportieve behoeften. Als er specifieke klachten zijn, kan ik je ook
           adviseren om een fysiotherapeut, huisarts of sportarts te raadplegen voor verdere behandeling.
