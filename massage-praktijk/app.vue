@@ -1,3 +1,6 @@
+<!--VERIFICATION GOOGLE SEARCH CONSOLE -->
+<meta name="google-site-verification" content="k78kVvXKEFlpd1HKrnnbjzbu6JuGbGj4zzW6ve8BvhI" />
+
 <template>
   <div>
     <link rel="stylesheet" href="https://use.typekit.net/rtt3tac.css">

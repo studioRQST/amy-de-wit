@@ -500,7 +500,7 @@ input[type="checkbox"] {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    
+
   }
 
 
