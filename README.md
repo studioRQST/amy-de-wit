@@ -59,7 +59,7 @@ Dit is de broncode van de Massagepraktijk Amy de Wit-website. Om de website loka
 
 Bezoekers kunnen de website gebruiken om meer te weten te komen over de aangeboden massagebehandelingen, een afspraak te plannen of contact op te nemen voor vragen of opmerkingen.
 
-## Bijdragen
+## 💡 Bijdragen
 
 Bijdragen aan dit project zijn welkom! Als je suggesties hebt voor verbeteringen of nieuwe functies, maak dan een fork van deze repository, maak je wijzigingen en stuur een pull-verzoek in.
 
