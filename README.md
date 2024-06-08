@@ -14,7 +14,6 @@ Dit is de repository voor de website van Massagepraktijk Amy de Wit, ontwikkeld 
 - [Installatie](#installatie)
 - [Gebruik](#gebruik)
 - [Bijdragen](#bijdragen)
-- [Bronnen] (#bronnen)
 - [Licentie](#licentie)
 
 ## 📄 Overzicht
@@ -62,11 +61,6 @@ Bezoekers kunnen de website gebruiken om meer te weten te komen over de aangebod
 ## 💡 Bijdragen
 
 Bijdragen aan dit project zijn welkom! Als je suggesties hebt voor verbeteringen of nieuwe functies, maak dan een fork van deze repository, maak je wijzigingen en stuur een pull-verzoek in.
-
-## 🗂️ Bronnen
-
-- [Nuxt Documentatie](https://nuxt.com/docs/getting-started/installation)
-- [GSAP Documentatie](https://greensock.com/gsap/)
 
 ## 🔓 Licentie
 
