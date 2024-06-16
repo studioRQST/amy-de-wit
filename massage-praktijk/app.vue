@@ -1,5 +1,12 @@
-<!--VERIFICATION GOOGLE SEARCH CONSOLE -->
-<meta name="google-site-verification" content="k78kVvXKEFlpd1HKrnnbjzbu6JuGbGj4zzW6ve8BvhI" />
+<script setup>
+import { useHead } from 'nuxt/app'
+
+useHead({
+  meta: [
+    { name: 'google-site-verification', content: '4p6ox4sEz3smGbckqLGx7kFKqwNEU7htwEWGz6u50h8' }
+  ]
+})
+</script>
 
 <template>
   <div>
