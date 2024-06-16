@@ -10,6 +10,9 @@ export default defineNuxtConfig({
             },
             link: [
                 {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+            ],
+            script: [
+                {src: 'https://platform.illow.io/banner.js?siteId=94ced126-86fa-417b-9c33-29daf18ae4bd', defer: true}
             ]
         },
         pageTransition: {name: 'page', mode: 'out-in'}

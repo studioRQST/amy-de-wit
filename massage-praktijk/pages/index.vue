@@ -3,7 +3,7 @@
     <head>
       <title>Verlicht Herstel & Vernieuw - Massagepraktijk Amy de Wit</title>
       <meta name="description" content="Ontdek de kracht van lymfedrainage en sportmassage voor optimaal herstel bij Massagepraktijk Amy de Wit. Laat mij je begeleiden op een reis van herstel en vernieuwing in Hem.">
-      <meta name="keywords" content="lymfedrainage massage, sportmassage, voetreflex, Massagepraktijk Amy de Wit, lymfedrainage therapie, sportmassage therapie, voetreflex therapie, herstel massage">
+      <meta name="keywords" content="lymfedrainage massage, sportmassage, voetreflex massage, Massagepraktijk Amy de Wit, lymfedrainage therapie, sportmassage therapie, voetreflex therapie, herstel massage, Amy de Wit">
 
 
       <!-- Facebook-pagina -->
